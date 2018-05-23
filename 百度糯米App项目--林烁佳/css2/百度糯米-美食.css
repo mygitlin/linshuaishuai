@@ -1,0 +1,369 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('../images/bg_hd.JPG') no-repeat;
+    background-size: 100%;
+}
+header{
+    width: 100%;
+    padding: 20vw 8% 0;
+}
+ul{
+    list-style: none;
+}
+/*头部*/
+.hd_input{
+    width: 100%;
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: #fff;
+    line-height: 30px;
+}
+.hd_input span{
+    color: rgba(0,0,0,0.4);
+}
+.list{
+    width: 100%;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 18px;
+}
+.list li{
+    display: inline-block;
+    width: 60px;
+    height: 72px;
+}
+.list li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+.list li a:active img{
+    background: #0f0f0f;
+}
+.list li a img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+hr{
+    margin:20px 0;
+}
+/*panner部分*/
+.img_pan{
+    width: 100%;
+    padding: 0 5%;
+    border-bottom: 10px solid #f2f4f5   ;
+}
+.panner{
+    width: 100%;
+    height: 24vw;
+    background: url("https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/7e3e6709c93d70cf957a9a39f4dcd100baa12b05.jpg")no-repeat;
+    background-size: 100%;
+    margin-bottom: 10px;
+}
+.panner img{
+    width: 100%;
+    height: 100%;
+}
+.s_panner{
+    width: 100%;
+    height: 22vw;
+    display: flex;
+    justify-content: space-between;
+}
+.s_panner div{
+    width: 49%;
+    height: 22vw;
+
+}
+.left_panner{
+    background-image: url("../images/s_panner1.JPG");
+    background-size: 100%;
+}
+.right_panner{
+    background-image: url("../images/s_panner2.JPG");
+    background-size: 100%;
+}
+.img_pan hr{
+    margin: 20px 0 0 0;
+}
+/*小轮播*/
+.plate1{
+    width: 100%;
+    height: 18VW;
+}
+.plate1_dis{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.img_main{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.img_main li{
+    width: 100%;
+    height: 100%;
+    padding: 2vw 0;
+}
+.img_main li a{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+}
+.img_position{
+    width: 14vw;
+    height: 14vw;
+    position: absolute;
+}
+.img_lunbo2{
+    width: 16vw;
+    height: 16vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 16vw;
+    font-size: 25px;
+    color: rgba(0,0,0,0.7);
+}
+.img1{
+    background: url("https://ss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/lbs/pic/item/aa18972bd40735fa97cd1ecd92510fb30f240880.jpg")no-repeat;
+    background-size: cover;
+}
+.img2{
+    background: url("https://gss0.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/lbs/pic/item/cf1b9d16fdfaaf518c55b1b5805494eef01f7a01.jpg")no-repeat;
+    background-size: cover;
+}
+.img3{
+    background: url("https://ss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/lbs/pic/item/42166d224f4a20a4f79e74d89c529822720ed029.jpg")no-repeat;
+    background-size: cover;
+}
+.img4{
+    background: url("https://gss0.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/lbs/pic/item/6609c93d70cf3bc7a89085f3dd00baa1cd112a18.jpg")no-repeat;
+    background-size: cover;
+}
+.text_lunbo{
+    height: 100%;
+    width: 60%;
+    margin-left: 16vw;
+}
+.text_lunbo p{
+    margin: 0;
+    font-size: 4vw;
+    color: #333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.text_lunbo span{
+    font-size: 3vw;
+    color: rgba(0,0,0,0.4);
+}
+.text_line{
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: #000;
+}
+
+/*内容*/
+.main{
+    width: 100%;
+    position: relative;
+}
+.main hr{
+    margin: 0;
+}
+.main_hd{
+    width: 100%;
+    height: 40px;
+}
+.main_hd2{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+.main_hd2 li{
+    width: 25%;
+    height: 40px;
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+}
+/*.main_hd2 a{*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /**/
+/*}*/
+.main_hd2 span::after{
+    content: "▼";
+    font-size: 12px;
+    padding-left: 8%;
+}
+
+
+/*食品*/
+.food{
+    width: 100%;
+    height: 36vw;
+    padding: 6vw 0 0 4vw;
+    position: relative;
+}
+.food>a{
+    text-decoration: none;
+    color: #333;
+}
+.food>div{
+    display: inline-block;
+}
+.food_img{
+    width: 28vw;
+    height: 22vw;
+    position: absolute;
+}
+.food_img img{
+    width: 100%;
+    height: 100%;
+}
+.food_text{
+    width: 50vw;
+    margin-left: 30vw;
+}
+.food_text div{
+    margin-top: 1vw;
+}
+.food_text h1{
+    font-size: 4vw;
+    margin-top: 0;
+}
+.jiage{
+    font-size: 2vw;
+}
+.jiage span{
+    color: rgba(0,0,0,0.3);
+}
+.jiage span:first-child{
+    color: #bf974d;
+}
+.activity{
+    font-size: 3vw;
+    position: relative;
+}
+.activity span:first-child{
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    color: #fff;
+    text-align: center;
+    line-height: 4vw;
+    background: #444;
+    padding: 1px 0;
+}
+.activity span:last-child{
+    margin-left: 6vw;
+    color: rgba(0,0,0,0.5);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.paiMing{
+    font-size: 2vw;
+    color: #bf974d;
+}
+
+/*页脚*/
+.main_foot{
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+}
+.main_foot span{
+    font-size: 13px;
+    color: rgba(0,0,0,0.4);
+}
+/*footer*/
+.over{
+    text-align: center;
+}
+.over span{
+    display: block;
+}
+.over span:first-child{
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+}
+.over span:last-child{
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+}
+
+
+/*回到顶部*/
+.Gtop{
+    width: 60px;
+    height: 60px;
+    background: rgba(200,200,200,0.7);
+    position: fixed;
+    right: 30px;
+    top: 80%;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    display: none;
+}
+
+
+.meishi{
+    width: 100%;
+    height: 60%;
+    background: #f8fafa;
+    position: fixed;
+    top: 40px;
+    z-index: 50;
+    display: none;
+}
+.meishi p{
+    padding-left: 5%;
+    height: 40px;
+    line-height: 6vw;
+}
+.meishi p:first-child{
+    background: #fff;
+}
+
+.block{
+    display: block;
+}

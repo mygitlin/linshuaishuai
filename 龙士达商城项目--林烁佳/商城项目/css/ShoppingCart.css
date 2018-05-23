@@ -1,0 +1,172 @@
+/*手指*/
+.sz{
+    cursor: pointer;
+}
+/*主体部分*/
+h1{
+    height: 26px;
+    text-align: right;
+    padding: 2px 2px;
+}
+h1>p{
+    display: inline;
+    color: #333;
+}
+h1>span{
+    color: #e51e1e;
+}
+h1>a>button{
+    width: 55px;
+    height: 27px;
+    border: none;
+    border-radius: 5px;
+    background: #aaa;
+    color: #fff;
+    font-weight: bold;
+}
+h1>a>button:hover{
+    color: #e51e1e;
+}
+/*购物车商品的导航栏*/
+.buyCart_hearder{
+    height: 40px;
+    padding-left: 15px;
+    line-height: 40px;
+    border: 1px solid #d2d2d2;
+    border-bottom: none;
+    background: #f3f3f3;
+    position: relative;
+}
+.buyCart_hearder li{
+    float: left;
+    position: absolute;
+}
+.buyCart_hearder li:nth-child(2){
+    left: 136px;
+}
+.buyCart_hearder li:nth-child(3){
+    left: 840px;
+}
+.buyCart_hearder li:nth-child(4){
+    left: 935px;
+}
+.buyCart_hearder li:nth-child(5){
+    left: 1030px;
+}
+.buyCart_hearder li:nth-child(6){
+    left: 1123px;
+}
+/*购物车里的内容*/
+.commodity{
+    height: 79px;
+    padding: 20px 15px;
+    margin-bottom: 25px;
+    border: 1px solid #d2d2d2;
+    background: #fcfcfc;
+}
+.commodity li{
+    float: left;
+}
+/*图片*/
+.commodity_img{
+    width: 84px;
+    margin: 0 20px 0 5px;
+}
+/*商品介绍*/
+.commodity_text{
+    width: 210px;
+    margin-right: 63px;
+}
+/*商品款式*/
+.commodity_text_color{
+    width: 389px;
+}
+/*单价*/
+.unit_price{
+    width: 115px;
+    text-align: center;
+    font-weight: bold;
+}
+.unit_price span{
+    font-size: 14px;
+}
+/*数量*/
+.commodity_AS{
+    width: 78px;
+    height: 23px;
+    border: 1px solid #d2d2d2;
+    background: #f0f0f0;
+}
+.commodity_AS span{
+    display: inline-block;
+    width: 15px;
+    height: 23px;
+    text-align: center;
+    cursor: pointer;
+    user-select:none;
+}
+.commodity_input{
+    width: 38px;
+    height: 23px;
+    border: 1px solid #bfbfbf;
+    border-bottom: none;
+    border-top: none;
+    text-align: center;
+}
+/*小计*/
+.Subtotal{
+    width:  110px;
+    text-align: center;
+    font-weight: bold;
+}
+.Subtotal span{
+    font-size: 14px;
+    color: #e51e1e;
+}
+/*操作*/
+.operation{
+    width: 60px;
+}
+/*购物车内容尾部结算栏*/
+.buyCart_footer{
+    height: 52px;
+    margin-bottom: 42px;
+    border: 1px solid #d2d2d2;
+}
+/*左侧*/
+.buyCart_footer_left{
+    width: 345px;
+}
+.buyCart_footer_left li{
+    float: left;
+    padding-left:15px;
+    font-weight: bold;
+    line-height: 52px;
+}
+/*右侧*/
+.buyCart_footer_right{
+    float: right;
+    width: 500px;
+}
+.buyCart_footer_right li{
+    float: right;
+    margin-left: 30px;
+    line-height: 52px;
+}
+.spanColor{
+    color: #e51e1e;
+}
+.spansize{
+    font-size: 18px;
+}
+#settle,#settle a{
+    width: 96px;
+    height: 52px;
+    background: #e51e1e;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.commodity_text a:hover{
+    color: #e51e1e;
+}

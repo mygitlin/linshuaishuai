@@ -1,0 +1,114 @@
+section{
+    height: 607px;
+}
+.address_left{
+    float: left;
+    width: 228px;
+    height: 408px;
+    margin-top: 5px;
+    border: 1px solid #d2d2d2   ;
+}
+.address_left ul{
+    width: 100px;
+    height: 310px;
+    margin: 37px 55px;
+}
+.address_left ul li{
+    height: 28px;
+}
+.address_left ul li a{
+    font-size: 14px;
+}
+.address_left ul li:first-child>a{
+    color: #e51e1e;
+}
+.address_left ul li a:hover{
+    color: #e51e1e;
+}
+.address_right{
+    float: right;
+    width: 870px;
+    margin: 39px 45px;
+    padding: 20px;
+    border: 1px solid #f4acac;
+    background: #fef7f7;
+    box-sizing: border-box;
+}
+.new_address{
+    height: 40px;
+}
+.new_address button{
+    width: 113px;
+    height: 30px;
+    background: #fde8e8;
+    border-radius: 5px;
+    border: 1px solid #e20606;
+    font-size: 14px;
+    color: #333;
+}
+.new_address p{
+    display: inline;
+    margin-left: 15px;
+}
+.new_address p span{
+    color: #e51e1e;
+}
+/*地址内容*/
+.new_address_text{
+    width: 830px;
+    height: 190px;
+    margin-bottom: 20px;
+    padding: 10px 30px 0 10px;
+    border-radius: 5px;
+    border:1px solid #d2d2d2;
+    box-sizing: border-box;
+}
+.new_address_text span p{
+    display: inline-block;
+    font-size: 14px;
+    color: #999;
+}
+.new_address_text>span>button{
+    width: 41px;
+    height: 21px;
+    background: #e51e1e;
+    color: #fff;
+    border: none;
+    margin-left: 22px;
+    cursor: pointer;
+}
+.new_address_text1{
+    display: inline-block;
+    width: 800px;
+    height: 135px;
+    margin-top: 20px;
+}
+.new_address_text1 div{
+   float: left;
+}
+.new_address_text1 div:first-child{
+    margin-right: 200px;
+}
+.address_right dl{
+    width: 230px;
+    height: 22px;
+}
+.address_right dt{
+    width: 60px;
+    text-align: right;
+    color: #999;
+}
+.address_right dt,.address_right dd{
+    display: inline-block;
+}
+.new_address_text1 span{
+    color: #0f7bd7;
+    line-height: 240px;
+    cursor: pointer;
+}
+.none{
+    display: none;
+}
+.none1{
+    display: none;
+}

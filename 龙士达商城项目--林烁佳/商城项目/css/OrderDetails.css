@@ -1,0 +1,225 @@
+article{
+    margin: 0 auto;
+    width: 1200px;
+    height: 1210px;
+}
+p{
+    font-size: 15px;
+}
+.width{
+    width:100%;
+}
+.height{
+    height: 100%;
+}
+#orderBox{
+    height: 50px;
+    line-height: 50px;
+}
+#orderBox a:link{
+    font-size:15px;
+    color: #666666;
+}
+#orderBox a:hover{
+    font-size:15px;
+    color: #ff0000;
+}
+#recordBox{
+    height: 315px;
+    margin-top:20px ;
+    border-top:2px solid #ff0000 ;
+    border-right: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.orderText1{
+    height: 50px;
+    line-height: 50px;
+}
+.orderText1 p{
+    width: 600px;
+    margin-left: 100px;
+}
+.orderText1 p span:nth-child(2){
+    float: right;
+    margin-right: 150px;
+}
+.orderText2{
+    width: 200px;
+    height: 50px;
+    margin:20px auto auto 100px;
+}
+.orderText2 span{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff0000;
+}
+.phoSpirit{
+    width: 820px;
+    height: 100px;
+    margin-left:300px ;
+    position: relative;
+}
+.picImg2{
+    height: 50px;
+}
+.picImg2 div:nth-child(1),.picImg2 div:nth-child(3),.picImg2 div:nth-child(5),.picImg2 div:nth-child(7),.picImg2 div:nth-child(9){
+    width: 60px;
+    height: 60px;
+}
+.picImg2 div{
+    width: 127px;
+    height: 60px;
+    float: left;
+}
+.picImg2 div:nth-child(1){
+    background: url("../image/订单详情/phoSpirit.png")no-repeat 10px;
+}
+.picImg2 div:nth-child(3){
+    background: url("../image/订单详情/phoSpirit.png")no-repeat -50px 0px;
+}
+.picImg2 div:nth-child(5){
+    background: url("../image/订单详情/phoSpirit.png")no-repeat -145px;
+}
+.picImg2 div:nth-child(7){
+    background: url("../image/订单详情/phoSpirit.png")no-repeat -220px;
+}
+.picImg2 div:nth-child(9){
+    background: url("../image/订单详情/phoSpirit.png")no-repeat -290px;
+}
+.picImg2 div:nth-child(2){
+    background: url("../image/订单详情/logistics1.jpg")no-repeat center;
+}
+.picImg2 div:nth-child(4){
+    background: url("../image/订单详情/logistics1.jpg")no-repeat center;
+}
+.picImg2 div:nth-child(6){
+    background: url("../image/订单详情/logistics2.jpg")no-repeat center;
+}
+.picImg2 div:nth-child(8){
+    background: url("../image/订单详情/logistics2.jpg")no-repeat center;
+}
+
+.picText{
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    line-height: 20px;
+}
+.picText span{
+    display: block;
+    float: left;
+    margin-right: 142px;
+
+}
+.textTime{
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    line-height: 20px;
+    margin-left: -15px;
+}
+.textTime span{
+    width: 80px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+.textTime span:nth-child(2){
+    margin-left: 300px;
+}
+.picText span:nth-child(5){
+    margin: 0;
+}
+#informaTion{
+    height: 320px;
+    border: 1px solid #dfdfdf;
+    margin-top: 40px;
+}
+#informaTion dl{
+    margin-top: 20px;
+    width: 250px;
+    font-size: 16px;
+    margin-left: 50px;
+    float: left;
+}
+#informaTion dl dt{
+    margin-top: 20px;
+    width: 80px;
+}
+.textInfor{
+    margin:-15px auto auto 80px;
+}
+#settleMent{
+    height: 315px;
+    border: 1px solid #dfdfdf;
+    margin: 40px auto 0;
+    position: relative;
+}
+.setMenName{
+    background: #eeeeee;
+    height: 50px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.setMenName span{
+    line-height: 50px;
+    float: left;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+}
+.setMenName span:nth-child(1){
+    width: 520px;
+}
+.resBox{
+    height: 120px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.resBox div{
+    line-height: 50px;
+    float: left;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    font-size:12px;
+    position: relative;
+}
+.resBox div:nth-child(1){
+    width: 520px;
+}
+.resBox div p{
+    text-align: center;
+}
+.resBox div:nth-child(1) div{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #dfdfdf;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
+}
+.payBox{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 10px;
+    bottom:20px;
+}
+.payText{
+    height: 20px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+.red{
+    color: #ff0000;
+}
+.payRight{
+    float: right;
+}
+.bigText{
+    font-size: 20px;
+    font-weight: bold;
+}

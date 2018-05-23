@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>梦的杂货店后台管理系统</title>
+    <!-- 加载Boots核心样式 -->
+    <link rel="stylesheet" href="../bootscss/bootstrap.min.css">
+    <!-- 加载Boots（主题文件）可以不引入 -->
+    <link rel="stylesheet" href="../bootscss/bootstrap-theme.min.css" />
+
+    <!-- 加载独立CSS文件 -->
+    <link rel="stylesheet" type="text/css" href="../css/add.css">
+
+    <!-- 加载JQ -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- 头部 -->
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">虚拟后台</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">功能 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">业务功能</li>
+                            <li><a href="#">信息建立</a></li>
+                            <li><a href="#">信息查询</a></li>
+                            <li><a href="#">信息管理</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">系统功能</li>
+                            <li><a href="#">系统设置</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">帮助</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="用户名">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="密码">
+                            </div>
+                            <button type="submit" class="btn btn-default">登录</button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#">退出</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+<!-- 内容主体 -->
+<div class="container-fluid main">
+    <div class="row">
+        <div class="col-md-2 col-sm-1 hidden-xs left-menu">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active header"><a href="#">首页</a></li>
+                <li role="presentation"><a href="#">添加商品</a></li>
+                <li role="presentation"><a href="#">商品列表</a></li>
+                <li role="presentation"><a href="#">商品管理</a></li>
+                <li role="presentation"><a href="#">系统设置</a></li>
+                <li role="presentation"><a href="#">退出系统</a></li>
+            </ul>
+
+        </div>
+        <div class="col-md-10 col-md-offset-2 col-sm-11 col-sm-offset-1 col-xs-12">
+            <section>
+                <div class="table">
+                    <div class="shoplist">
+                        <h1>上架商品列表</h1>
+                    </div>
+                    <form method="post" action="/change" class="listTable">
+                        <ul class="jianm">
+                            <li>名称</li>
+                            <li>介绍</li>
+                            <li>数量</li>
+                            <li>价格(￥RMB)</li>
+                            <li>编辑按钮</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <input type="text" value="{{data.name}}" name="name"/>
+                            </li>
+                            <li>
+                                <input type="text" value="{{data.text}}" name="text"/>
+                            </li>
+                            <li>
+                                <input type="text" value="{{data.num}}" name="num" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" />
+                            </li>
+                            <li>
+                                <input type="number" value="{{data.money}}" name="money" />
+                            </li>
+                            <li>
+                                <input type="hidden" name="id" value="{{data.id}}"/>
+                                <input type="submit" value="保存" name="submit" class="submit"/>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+</html>

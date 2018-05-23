@@ -1,0 +1,187 @@
+article{
+    width: 1200px;
+    margin: 0 auto 0;
+    height: 600px;
+    position: relative;
+}
+#functionBox{
+    width: 225px;
+    height: 420px;
+    border: 1px solid #dfdfdf;
+}
+#functionBox dl{
+    width: 175px;
+    margin-left: 50px;
+    text-align: left;
+}
+#functionBox dl dt{
+    font-weight: bold;
+    color: #ff0000;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+#functionBox dl dd{
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+#functionBox dl dd a:link{
+    color: #666666;
+    font-size: 16px;
+}
+#functionBox dl dd a:hover{
+    color: #ff0000;
+    font-size: 16px;
+}
+#userCenter{
+    width:900px;
+    height: 160px;
+    border: 1px solid #9f9f9f;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.width{
+    width: 100%;
+}
+.userName{
+    height: 95px;
+    background: #f5f8fa;
+    position: relative;
+    border-bottom: 1px solid #dfdfdf;
+}
+.uSer{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius:50%;
+    top: 10px;
+    left: 10px;
+    background: url("../image/会员中心/classify_01.png")no-repeat -20px 10px;
+    border: 1px solid #dfdfdf;
+}
+.aDdress{
+    position: absolute;
+    width: 490px;
+    height: 100%;
+    right: 10px;
+    line-height:95px;
+}
+.aDdress span{
+    display: block;
+    float: left;
+    margin-right: 85px;
+}
+.aDdress span:nth-child(3){
+    margin-right: 0;
+}
+.aDdress span a:link{
+    color: #666666;
+    font-size: 16px;
+}
+.aDdress span a:hover{
+    color: #ff0000;
+    font-size: 16px;
+}
+#userCenter ul{
+    width: 100%;
+    height: 60px;
+
+}
+#userCenter ul li{
+    width: 180px;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+#userCenter ul li span{
+    color: #ff0000;
+}
+#userCenter ul li:after{
+    content: "|";
+    color: #fff;
+    font-size: 20px;
+    float: right;
+}
+#userCenter ul li:nth-child(5):after{
+    content: none;
+}
+.logisTics{
+    width:900px;
+    height: 160px;
+    border: 1px solid #9f9f9f;
+    position: absolute;
+    top:190px;
+    right: 0;
+}
+.textBox1{
+    height: 60px;
+    border-bottom: 1px solid #9f9f9f;
+    background: #f5f8fa;
+    position: relative;
+    line-height: 60px;
+
+}
+.textBox1 span{
+    width: 120px;
+    height: 40px;
+    background: url("../image/会员中心/car.png")no-repeat left center ;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: right;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sigNed{
+    height: 120px;
+    position: relative;
+}
+.picImg2{
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    border: 1px solid #dfdfdf;
+}
+.sigNed span{
+    display: block;
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    top: 20px;
+    left: 125px;
+    position: absolute;
+    line-height: 20px;
+}
+.sigNed p{
+    width: 400px;
+    height: 20px;
+    font-size: 16px;
+    left: 125px;
+    top:50px;
+    position: absolute;
+    line-height: 20px;
+}
+.sigNed p span{
+  margin-top: -20px;
+    margin-left: 60px;
+}
+.sigNed p span a{
+    font-size: 16px;
+}
+#submit1{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top:30px;
+}
+/*.textBox1 p{*/
+    /**/
+/*}*/

@@ -1,0 +1,12 @@
+{
+	"name": "my-app",
+	"version": "0.0.1",
+	"dependencies": {
+		"colors": "^1.2.1",
+		"express": "^4.16.3",
+		"mysql": "^2.15.0"
+	},
+	"devDependencies": {
+		"hbs": "^4.0.1"
+	}
+}

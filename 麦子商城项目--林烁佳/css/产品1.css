@@ -1,0 +1,167 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+#daYingBaoJiaDan{
+    width: 980px;
+    height: 25px;
+    margin: 0 auto 0;
+    font-size: 11px;
+    line-height: 25px;
+}
+#daYingBaoJiaDan a{
+    float: right;
+}
+#xieFu{
+    clear: both;
+    width: 980px;
+    height: 20px;
+    background: #fefbff;
+    margin: 0 auto 0;
+    border-bottom: 1px solid #d8d0dc;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+#shangPinLieBiao{
+     width:980px;
+     height: auto;
+     margin: 0 auto;
+ }
+th{
+    height: 25px;
+    /*background: #f5f5f5;*/
+    border-right: 1px solid white;
+    font-size: 12px;
+}
+#tuPian{
+    width: 101px;
+    height: 25px;
+    text-align: left;
+    line-height: 25px;
+}
+#shangPin{
+     width: 448px;
+     height: 25px;
+     text-align: left;
+     line-height: 25px;
+ }
+#lingShouJia{
+    width: 119px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+#benZhanJia{
+    width: 119px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+#kuCun{
+    width: 83px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+#gouMai{
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+td{
+    font-size: 12px;
+    height: 60px;
+}
+.tuPianTd{
+    width: 101px;
+    height: 60px;
+    text-align: left;
+    line-height: 3px;
+}
+.tuPianTd img{
+}
+.shangPinTd{
+    width: 448px;
+    height: 60px;
+    text-align: left;
+    line-height: 60px;
+    color: gray;
+}
+.shangPinTd a:hover{
+    color: red;
+}
+.lingShouJiaTd{
+    width: 119px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+
+}
+.benZhanJiaTd{
+    width: 119px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: red;
+}
+.kuCunTd{
+    width: 83px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+
+}
+.gouMaiTd{
+    width: 110px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color:gray;
+}
+.gouMaiTd a:hover{
+    color: red;
+}
+#tiaoZhuanYeShu{
+    width: 980px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 25px;
+    font-size: 12px;
+    background: #faf2ff;
+}
+#tiaoZhuanYeShu span{
+    margin-left: 6px;
+    margin-right: 10px;
+}
+#tiaoZhuanYeShu input{
+    width: 30px;
+}
+#tiaoZhuanYeShu button{
+    width: 30px;
+    border-radius: 5px;
+}
+#tiaoZhuanYeShu a{
+    color: black;
+}
+#tiaoZhuanYeShu a:hover{
+    color: #db3635;
+}
+.one{
+    color: red;
+    margin-left: 5px;
+}
+.tdbg1{
+    background: #ededed;
+}
+.tdbg2{
+    background: white;
+}

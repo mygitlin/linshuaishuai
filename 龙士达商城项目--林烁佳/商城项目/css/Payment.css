@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*支付页面的头部*/
+.payment_head{
+    width: 990px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    margin: 28px auto 0 auto;
+}
+.payment_head ul:nth-child(1){
+    width: 470px;
+    float: left;
+}
+.payment_head ul:nth-child(1)>li:nth-child(2){
+    color: #a1a1a1;
+}
+.payment_head ul:nth-child(1)>li:nth-child(2)>span{
+    color: #e31613;
+}
+.payment_head ul:nth-child(2){
+    float: right;
+}
+.payment_head ul:nth-child(2)>li:nth-child(2){
+    float: right;
+}
+.payment_head ul:nth-child(2)>li:nth-child(2)>a,.payment_head ul:nth-child(2)>li:nth-child(2) i{
+    clear: both;
+    color: #4079b8;
+}
+
+
+/*支付内容*/
+.payment_content{
+    width: 990px;
+    height: 595px;
+    border: 1px solid #cccccc;
+    margin: 35px auto 0 auto;
+}
+.payment_content ul:nth-child(1){
+    width: 100px;
+    height: 32px;
+    border: 1px solid #cccccc;
+    background: #e31613;
+    border-radius: 0 25px 25px 0;
+    text-align: center;
+    line-height: 32px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.payment_content ul:nth-child(2){
+    width: 408px;
+    height: 70px;
+    margin: 25px auto 0 auto;
+    text-align: center;
+}
+.payment_content ul:nth-child(2)>h3{
+    font-size: 28px;
+    color: #333333;
+}
+.payment_content ul:nth-child(2) li span{
+    margin-top: 5px;
+    color: #e31613;
+}
+.payment_content ul:nth-child(2) li span:nth-child(2){
+    margin-left: 20px;
+}
+.payment_content ul:nth-child(3){
+    width: 908px;
+    height: 266px;
+    margin: 10px auto 0 auto;
+}
+.payment_content ul:nth-child(3)>li{
+    width: 218px;
+    height: 80px;
+    border: 1px solid #cccccc;
+    float: left;
+    margin: 0 3px 8px 4px;
+}
+.payment_content ul:nth-child(3)>li>input{
+    position: absolute;
+    margin: 30px 30px auto 160px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+}
+.payment_content>ul:nth-child(4){
+    width: 80px;
+    margin: 20px auto 0 auto;
+}
+.payment_content>ul:nth-child(4)>li:nth-child(1)>p{
+    float: left;
+    color: #4079b8;
+}
+.payment_content>ul:nth-child(4)>li:nth-child(2)>i{
+    margin-left: 10px;
+    color: #4079b8;
+}
+.payment_content>ul:nth-child(5)>li>img{
+    width: 218px;
+    height: 80px;
+    border: 1px solid #cccccc;
+    margin: 55px 0 0 40px;
+}
+.payment_content>ul:nth-child(5)>li>input{
+    position: absolute;
+    margin: 30px 30px auto 160px;
+    border-radius: 50%;
+    width: 106px;
+    margin-right: 51px;
+    border: 1px solid;
+    margin-top: 90px;
+}
+
+/*支付页面的尾部*/
+.payment_tail{
+    width: 990px;
+    height: 84px;
+    border: 1px solid #cccccc;
+    margin: 22px auto 0 auto;
+}
+.payment_tail>ul{
+    width: 800px;
+    height: 30px;
+    margin-top: 25px;
+}
+.payment_tail>ul>li{
+    float: left;
+    width: 140px;
+    height: 30px;
+    border-right: 1px solid#cccccc;
+    margin-left: 40px;
+}
+.payment_tail>ul>li:nth-child(4){
+    border-right: none;
+}
+
+/*确认支付*/
+.payment_footer{
+    width: 990px;
+    height: 110px;
+    margin: 10px auto 80px auto;
+}
+.payment_footer>ul:nth-child(1)>li:nth-child(1){
+    margin-left: 40px;
+    color: #e31613;
+}
+.payment_footer>ul>li{
+    float: left;
+}
+.payment_footer>ul:nth-child(1)>li:nth-child(2){
+    font-weight: bold;
+    float: right;
+}
+.payment_footer>ul:nth-child(2)>li{
+    clear: both;
+    float:right;
+    margin-top: 10px;
+}
+.in1{
+    width: 20px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+}
+.payment_footer p{
+    clear: both;
+    float: right;
+    margin-top: 10px;
+}
+.payment_footer>a>input{
+    width: 88px;
+    height: 28px;
+    border: 1px solid #cccccc;
+    color: #ffffff;
+    clear: both;
+    float: right;
+    background: #e31613;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 10px;
+}
+.payment_footer button a:visited{
+    color: #ffffff;
+}
+
+body .payment_content .borderImg{
+    border: 1px solid #ff0036;
+}

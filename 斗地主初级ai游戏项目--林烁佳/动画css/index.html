@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>斗地主</title>
+	<!-- 引入动画css文件 -->
+	<link type="text/css" rel="stylesheet" href="./css/animation.css">
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		background-image: url('./images/16.jpg');
+		background-size: 100%;
+		overflow: hidden;
+	}
+	li{
+		list-style: none;
+	}
+	.left{
+		width:20%;
+		height: 800px;
+		float: left;
+		padding-top: 100px;
+		position: relative;
+		/*background: red;*/
+	}
+	.mid{
+		width:60%;
+		height: 950px;
+		float: left;
+		/*background: blue;*/
+		position: relative;
+	}
+	.mid_top{
+		width: 100%;
+		height: 500px;
+		float: left;
+		/*background: #000;*/
+	}
+	.mid_end{
+		position: relative;
+		width: 100%;
+		height: 300px;
+		float: left;
+		margin-top: 220px;
+		/*background: #fff;*/
+	}
+	.right{
+		width:20%;
+		height: 800px;
+		float: right;
+		padding-top: 100px;
+		position: relative;
+		/*background: yellow;*/
+	}
+
+	.all_poker{
+		width: 121px;
+		height: 159px;
+		margin: 100px auto 0px;
+		position: relative;
+		/*background: #fff;*/
+	}
+	.all_poker li{
+		position: absolute;
+	}
+	.temp_poker{
+		width: 121px;
+		height: 159px;
+		margin: 100px auto 0px;
+		position: relative;
+	}
+	.back {
+		width:121px;
+		height: 159px;
+		background: url('./images/14.png') 0 -180px;
+		border-radius: 10px;
+		box-shadow: 0 1px 1px rgba(100,100,100,0.5);
+		position: absolute;
+		z-index: 100;
+	}
+	.play_1, .play_2, .play_3{
+		width:121px;
+		height: 159px;
+		margin: 20px auto 0px;
+		position: relative;
+	}
+	.play_1 li,.play_2 li,.play_3 li{
+		position: absolute;
+		box-shadow: 0 1px 1px #444;
+	}
+	.robPoker{
+		position: absolute;
+		width: 300px;
+		height: 50px;
+	}
+	.left .robPoker{
+		transform:rotate(90deg);
+		right: -100px;
+		top: 400px;
+	}
+	.right .robPoker{
+		transform:rotate(-90deg);
+		left: -100px;
+		top: 400px;
+	}
+	.mid_end .robPoker{
+		top: -50px;
+		left: 420px;
+	}
+	.robPoker li{
+		float: left;
+		width: 130px;
+		height: 40px;
+		background: #ff8d2a;
+		border: 3px solid #ff7a09;
+		border-radius: 15px;
+		text-align: center;
+		opacity: 0;
+	}
+	.robPoker li:nth-child(2){
+		float: right;
+	}
+	.robPoker li span{
+		font-size: 20px;
+		color: #fff;
+		line-height: 40px;
+	}
+	.time{
+		position: absolute;
+		display: block;
+		width: 80px;
+		height: 50px;
+		font-size: 100px;
+		color: #fff;
+		left: 48%;
+		top: 35%;
+		z-index: 500;
+		opacity: 0;
+	}
+	.start_btn{
+		width: 100px;
+		height: 50px;
+		background: #ccc;
+		position: absolute;
+		left: 48%;
+		top: 45%;
+		z-index: 1000;
+	}
+	</style>
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<!-- <script type="text/javascript" src="./js/game.js"></script> -->
+</head>
+<body>
+<div class="left">
+	<ul class="robPoker">
+		<li class="rob">
+			<span>抢地主</span>
+		</li>
+		<li class="noRob">
+			<span>不抢</span>
+		</li>
+	</ul>
+	<ul class="play_1"></ul>
+</div>
+<div class="mid">
+	<div class="mid_top">
+		<ul class="all_poker">
+			<!-- 洗牌动画 -->
+			<li class="back" style="top: 0px; left: 0px;"></li>
+			<li class="back" style="top: -0.333333px; left: -0.166667px;"></li>
+			<li class="back" style="top: -0.666667px; left: -0.333333px;"></li>
+			<li class="back" style="top: -1px; left: -0.5px;"></li>
+			<li class="back" style="top: -1.33333px; left: -0.666667px;"></li>
+			<li class="back" style="top: -1.66667px; left: -0.833333px;"></li>
+			<li class="back" style="top: -2px; left: -1px;"></li>
+			<li class="back" style="top: -2.333333px; left: -1.166667px;"></li>
+			<li class="back" style="top: -2.666667px; left: -1.333333px;"></li>
+			<li class="back" style="top: -3px; left: -1.5px;"></li>
+			<li class="back" style="top: -3.33333px; left: -1.666667px;"></li>
+			<li class="back" style="top: -3.66667px; left: -1.833333px;"></li>
+			<li class="back" style="top: -4px; left: -2px;"></li>
+			<li class="back" style="top: -4.333333px; left: -2.166667px;"></li>
+			<li class="back" style="top: -4.666667px; left: -2.333333px;"></li>
+			<li class="back" style="top: -5px; left: -2.5px;"></li>
+			<li class="back" style="top: -5.33333px; left: -2.666667px;"></li>
+			<li class="back" style="top: -5.66667px; left: -2.833333px;"></li>
+			<li class="back" style="top: -6px; left: -3px;"></li>
+			<li class="back" style="top: -6.333333px; left: -3.166667px;"></li>
+			<li class="back" style="top: -6.666667px; left: -3.333333px;"></li>
+			<li class="back" style="top: -7px; left: -3.5px;"></li>
+			<li class="back" style="top: -7.33333px; left: -3.666667px;"></li>
+			<li class="back" style="top: -7.66667px; left: -3.833333px;"></li>
+			<li class="back" style="top: -8px; left: -4px;"></li>
+			<li class="back" style="top: -8.333333px; left: -4.166667px;"></li>
+			<li class="back" style="top: -8.666667px; left: -4.333333px;"></li>
+			<li class="back" style="top: -9px; left: -4.5px;"></li>
+			<li class="back" style="top: -9.33333px; left: -4.666667px;"></li>
+			<li class="back" style="top: -9.66667px; left: -4.833333px;"></li>
+			<li class="back" style="top: -10px; left: -5px;"></li>
+			<li class="back" style="top: -10.333333px; left: -5.166667px;"></li>
+			<li class="back" style="top: -10.666667px; left: -5.333333px;"></li>
+			<li class="back" style="top: -11px; left: -5.5px;"></li>
+			<li class="back" style="top: -11.33333px; left: -5.666667px;"></li>
+			<li class="back" style="top: -11.66667px; left: -5.833333px;"></li>
+			<li class="back" style="top: -12px; left: -6px;"></li>
+			<li class="back" style="top: -12.333333px; left: -6.166667px;"></li>
+			<li class="back" style="top: -12.666667px; left: -6.333333px;"></li>
+			<li class="back" style="top: -13px; left: -6.5px;"></li>
+			<li class="back" style="top: -13.33333px; left: -6.666667px;"></li>
+			<li class="back" style="top: -13.66667px; left: -6.833333px;"></li>
+			<li class="back" style="top: -14px; left: -7px;"></li>
+			<li class="back" style="top: -14.333333px; left: -7.166667px;"></li>
+			<li class="back" style="top: -14.666667px; left: -7.333333px;"></li>
+			<li class="back" style="top: -15px; left: -7.5px;"></li>
+			<li class="back" style="top: -15.33333px; left: -7.666667px;"></li>
+			<li class="back" style="top: -15.66667px; left: -7.833333px;"></li>
+			<li class="back" style="top: -16px; left: -8px;"></li>
+			<li class="back" style="top: -16.333333px; left: -8.166667px;"></li>
+			<li class="back" style="top: -16.666667px; left: -8.333333px;"></li>
+			<li class="back" style="top: -17px; left: -8.5px;"></li>
+			<li class="back" style="top: -17.33333px; left: -8.666667px;"></li>
+			<li class="back" style="top: -17.66667px; left: -8.833333px;"></li>
+			<!-- 洗牌动画end -->
+		</ul>
+		<span class="time"></span>
+		<div class="start_btn">开始</div>
+	</div>
+	<div class="mid_end">
+		<ul class="robPoker">
+			<li class="rob">
+				<span>抢地主</span>
+			</li>
+			<li class="noRob">
+				<span>不抢</span>
+			</li>
+		</ul>
+		<ul class="play_2">
+		</ul>
+	</div>
+	<!-- 定义出牌动画 -->
+	<div class="animation_plane"></div>
+	<div class="animation_pair"></div>
+	<div class="animation_bomb"></div>
+	<div class="animation_wangbomb"></div>
+	<div class="animation_straight"></div>
+	<!-- 定义出牌动画end -->
+</div>
+<div class="right">
+	<ul class="robPoker">
+		<li class="rob">
+			<span>抢地主</span>
+		</li>
+		<li class="noRob">
+			<span>不抢</span>
+		</li>
+	</ul>
+	<ul class="play_3"></ul>
+</div>
+</body>
+</html>

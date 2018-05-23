@@ -1,0 +1,447 @@
+/*主体*/
+section{
+    width: 100%;
+    height: 4415px;
+    margin: 0 auto;
+}
+.brand_selection{
+    height: 315px;
+}
+h1{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+h1,h1 a,h1 span{
+    font-size: 16px;
+    color: #666;
+}
+.brand_selection1{
+    height: 265px;
+    border:1px solid #d2d2d2;
+}
+.brand{
+    height: 120px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.brand1,.Sports_goods_left{
+    float: left;
+    width: 140px;
+    border-right: 1px solid #d2d2d2;
+    background: #f1f1f1;
+}
+.brand1{
+    height: 120px;
+}
+.brand1 span{
+    display: block;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+.brand2{
+    float: right;
+    width: 1050px;
+    height: 120px;
+    padding-right: 5px;
+}
+.brand2 ul{
+    width: 1052px;
+    height: 48px;
+    border: 1px solid #d2d2d2;
+}
+.brand2 ul:first-child{
+    border-bottom: none;
+    margin-top: 10px;
+}
+.brand2 ul li{
+    float: left;
+    width: 116px;
+    height: 48px;
+    border-right: 1px solid #d2d2d2;
+}
+.brand2 ul li:hover a img{
+    opacity: 0.5;
+}
+.brand2 ul li:last-child{
+    border: none;
+}
+.Sports_goods{
+    height: 34px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.Sports_goods_left{
+    height: 34px;
+}
+.Sports_goods_left span{
+    font-size: 16px;
+    text-align: left;
+    line-height: 34px;
+    margin-left: 10px;
+}
+.Sports_goods_cen{
+    float: left;
+    width: 935px;
+    height: 34px;
+    line-height: 34px;
+    margin-left: 20px;
+}
+.Sports_goods_cen li{
+    float: left;
+    width: 130px;
+}
+.Sports_goods_cen li a{
+    color: #005aa0;
+}
+.Sports_goods_right{
+    float: right;
+    width: 100px;
+    height: 34px;
+}
+.Sports_goods_right_btn{
+    float: left;
+    width: 50px;
+    height: 20px;
+    margin-top: 7px;
+    background: #f4f4f4;
+    text-align: center;
+    line-height: 20px;
+}
+.Sports_goods_right_More{
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.Sports_goods2{
+    height: 39px;
+}
+.Sports_goods2 .Sports_goods_left{
+    line-height: 39px;
+    height: 39px;
+}
+.Sports_goods2_right{
+    float: right;
+    width: 1055px;
+    height: 39px;
+}
+.Sports_goods2_right li{
+    float: left;
+    border: 1px solid #d2d2d2;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.Sports_goods2_right li span{
+    color: #005aa0;
+}
+.brand_selection2{
+    height: 40px;
+    margin-top: 10px;
+    background: #f1f1f1;
+    border: 1px solid #d2d2d2;
+}
+.brand_selection2_left{
+    float: left;
+    width: 285px;
+    height: 23px;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    margin: 7px;
+}
+.brand_selection2_left li{
+    float: left;
+    width: 55px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    border-right: 1px solid #d2d2d2;
+}
+.brand_selection2_left li:first-child{
+    background: #e4393c;
+    color: #fff;
+}
+.brand_selection2_left_i{
+    color: #fff;
+}
+.brand_selection2_left li:last-child{
+    width: 60px;
+    border: none;
+}
+.brand_selection2_left2{
+    float: left;
+    width: 230px;
+    height: 25px;
+    margin-top: 7px;
+}
+.brand_selection2_left2 div{
+    float: right;
+}
+.money_Section{
+    width: 58px;
+    height: 23px;
+    font-size: 14px;
+    margin: 0 5px;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+}
+.brand_selection2_left2 input{
+    width: 40px;
+    height: 22px;
+    border: none;
+    outline: none;
+}
+.brand_selection2_right{
+    float: right;
+    width: 185px;
+    height: 30px;
+    margin-top: 7px;
+    margin-right: 80px;
+}
+.brand_selection2_right input{
+    float: left;
+    width: 133px;
+    height: 23px;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+}
+.brand_selection2_right span{
+    float: right;
+    display: block;
+    width: 49px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    border: 1px solid #d2d2d2;
+    border-left: none;
+}
+.brand_selection2_right2{
+    float: right;
+    width: 245px;
+    height: 25px;
+    margin: 7px 5px;
+    text-align: center;
+    line-height: 23px;
+}
+.brand_selection2_right2 .number1{
+    color: #222;
+}
+.brand_selection2_right2 .number2{
+    color: #e51e1e;
+    margin-left: 5px;
+}
+.brand_selection2_right2 div{
+    float: right;
+    width: 48px;
+    height: 23px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 23px;
+    border: 1px solid #d2d2d2;
+}
+.FlipRight{
+    background: #fff;
+}
+.Sports_goods_cen a:hover,.Sports_goods2_right li span:hover{
+    color: #e51e1e;
+}
+/*商品内容部分*/
+.shopcontent{
+    height: 335px;
+    margin: 15px 0;
+}
+.shopcontent a{
+    float: left;
+    width: 226px;
+    height: 333px;
+    margin-right: 15px;
+    border: 1px solid #d2d2d2;
+}
+.shopcontent a li{
+    width: 226px;
+    height: 333px;
+}
+.shopcontent a:last-child{
+    margin: 0;
+}
+.shopcontent li img{
+    width: 226px;
+    height: 220px;
+}
+.shopcontent_li_text{
+    height: 35px;
+    padding: 5px;
+}
+.basketball_Price{
+    display: inline-block;
+    width: 226px;
+    height: 35px;
+    text-align: right;
+}
+.basketball_Price h2{
+    display: inline-block;
+    font-size: 24px;
+    color: #d51938;
+    margin-right: 5px;
+}
+.shopcontent_li_footer{
+    height: 25px;
+}
+.shopcontent_li_footer div{
+    float: left;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    color: #333;
+    background: #ccc;
+}
+.shopcontent_li_footer_text{
+    margin-left: 55px;
+}
+.shopcontent_li_footer p{
+    float: right;
+    width: 35px;
+    height: 20px;
+    margin-right: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    background: #ff0000;
+}
+.shopcontent_li_footer_text:hover,.shopcontent_li_text:hover{
+    color: #e51e1e;
+}
+/*跳转翻页*/
+.Page_Jump{
+    height: 38px;
+    margin: 48px 0 64px;
+}
+.Page_Jump_1{
+    float: right;
+    width: 760px;
+    height: 38px;
+
+}
+.Page_Jump_1 button{
+    width: 83px;
+    color: #999;
+}
+.Page_Jump_1 button:last-child{
+    margin-left: 5px;
+    width: 55px;
+}
+.Page_Jump_1 button,.Page_Jump_1 ul li{
+    font-size: 14px;
+    float: left;
+    height: 38px;
+    background: #f7f7f7;
+    border: 1px solid #d2d2d2;
+}
+.Page_Jump_1 span{
+    float: left;
+    font-size: 14px;
+    line-height: 38px;
+    margin-left: 10px;
+}
+.jump{
+    width: 38px;
+    height: 38px;
+    margin: 0 5px;
+    text-align: center;
+    background: #f7f7f7;
+    border: 1px solid #d2d2d2;
+}
+.Page_Jump_1 ul{
+    float: left;
+    width: 360px;
+    height: 38px;
+}
+.Page_Jump_1 ul li{
+    width: 38px;
+    text-align: center;
+    line-height: 38px;
+    margin-left: 5px;
+}
+.Page_Jump_1 ul li a{
+    display: block;
+    width: 38px;
+    height: 38px;
+}
+.Page_Jump_1 ul li a:hover,.Page_Jump_1 button:hover{
+    color: #e51e1e;
+}
+
+.Page_Jump_1 ul li:last-child{
+    border-color: #fff;
+    background: #fff;
+}
+.acolor{
+    color: #e51e1e;
+}
+#bdback{
+    border: 1px solid #fff;
+    background: #fff;
+
+}
+/*猜你喜欢*/
+.guess_like{
+    height: 290px;
+}
+.guess_like_head{
+    width: 1200px;
+    height: 39px;
+    border-bottom: 2px solid #e51e1e;
+}
+.guess_like_head_left{
+    float: left;
+    width: 330px;
+    padding: 5px;
+}
+.guess_like_head_left img{
+    float: left;
+}
+.guess_like_head_left h3{
+    display: inline;
+    font-size: 20px;
+    color: #333;
+    margin-right: 20px;
+}
+button,.brand_selection2_left li,.brand_selection2_right span,.FlipRight,.FlipLeft,.Sports_goods_right_btn{
+    cursor: pointer;
+}
+.guess_like_head button{
+    float: right;
+    width: 100px;
+    height: 33px;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+}
+.guess_like_box{
+    height: 237px;
+    margin-top: 10px;
+}
+.guess_like_box a{
+    display: block;
+    float: left;
+    width: 230px;
+    height: 235px;
+    margin-right: 10px;
+    border: 1px solid #d2d2d2;
+}
+.guess_like_box a:last-child{
+    margin: 0;
+}
+.guess_like_box div img{
+    width: 230px;
+    height: 150px;
+}
+.guess_like_box div p{
+    height: 30px;
+    padding: 5px 15px 5px 5px;
+}
+.guess_like_box div span{
+    display: block;
+    font-size: 18px;
+    color: #e51e1e;
+    font-weight: bold;
+    margin-top: 15px;
+}

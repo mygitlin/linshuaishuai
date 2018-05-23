@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>虚拟后台</title>
+<!-- 加载Boots核心样式 -->
+<link rel="stylesheet" href="../bootscss/bootstrap.min.css">
+<!-- 加载Boots（主题文件）可以不引入 -->
+<link rel="stylesheet" href="../bootscss/bootstrap-theme.min.css" />
+
+<!-- 加载独立CSS文件 -->
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+
+<!-- 加载JQ -->
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body>
+<!-- 头部 -->
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">虚拟后台</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">功能 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">业务功能</li>
+                            <li><a href="#">信息建立</a></li>
+                            <li><a href="#">信息查询</a></li>
+                            <li><a href="#">信息管理</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">系统功能</li>
+                            <li><a href="#">系统设置</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">帮助</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="用户名">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="密码">
+                            </div>
+                            <button type="submit" class="btn btn-default">登录</button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#">退出</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+<!-- 内容主体 -->
+<div class="container-fluid main">
+    <div class="row">
+        <div class="col-md-2 col-sm-1 hidden-xs left-menu">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active header"><a href="#">首页</a></li>
+                <li role="presentation"><a href="#">添加商品</a></li>
+                <li role="presentation"><a href="#">商品列表</a></li>
+                <li role="presentation"><a href="#">商品管理</a></li>
+                <li role="presentation"><a href="#">系统设置</a></li>
+                <li role="presentation"><a href="#">退出系统</a></li>
+            </ul>
+
+        </div>
+        <div class="col-md-10 col-md-offset-2 col-sm-11 col-sm-offset-1 col-xs-12">
+            <section>
+
+                <div class="table">
+                    <div class="shoplist">
+                        <h1>上架商品列表</h1>
+                        <form action="/index" method="post" class="query" >
+                            <!--<form target="po"  method="post" class="query" >-->
+                            <input type="text" name="name" class="queryName"/>
+                            <input type="submit" class="queryBtn" value="查询"/>
+                        </form>
+                    </div>
+                    <ul class="jianm">
+                        <li>序号</li>
+                        <li>名称</li>
+                        <li>介绍</li>
+                        <li>数量</li>
+                        <li>价格(￥RMB)</li>
+                        <li>状态</li>
+                    </ul>
+                    <div id="textList">
+                        {{#each data}}
+                        <ul class="node">
+                            <li>
+                                {{id}}
+                            </li>
+                            <li>
+                                {{name}}
+                            </li>
+                            <li>
+                                {{text}}
+                            </li>
+                            <li>
+                                {{num}}
+                            </li>
+                            <li>
+                                {{money}}
+                            </li>
+
+                            <li>
+                                <a href="/change/{{id}}">编辑</a>
+                                <span>/</span>
+                                <a href="{{id}}" class="del">删除</a>
+                            </li>
+                        </ul>
+                        {{/each}}
+                    </div>
+
+                    <ul id="deep" >
+                        <span>共<span>{{len}}</span>页</span>
+                        <!--<li>-->
+                            <!--<a href="/apiFlip/1"><<</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a href="">2</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a href="">3</a>-->
+                        <!--</li>-->
+                    </ul>
+
+                    <div class="xinZhen">
+                        <a href="/add">新增</a>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+</div>
+<!--<iframe name="po" frameborder="0" >22222222</iframe>-->
+</body>
+</html>

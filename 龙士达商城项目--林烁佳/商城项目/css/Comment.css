@@ -1,0 +1,142 @@
+button{
+    color: #fff;
+}
+.cen{
+    width: 950px;
+    height: 635px;
+    margin: 15px auto;
+}
+.cen1{
+    height: 565px;
+    border: 1px solid #eee;
+}
+.cen1>h1{
+    height: 38px;
+    margin-top: 2px;
+    border-bottom: 2px solid #f17373;
+}
+.cen1>h1>span{
+    display: block;
+    width: 150px;
+    height: 38px;
+    background: #e51e1e;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+}
+.evaluate{
+    height: 309px;
+    background: url("../image/评论页/xuxian.jpg")no-repeat bottom;
+    padding: 30px 98px 0 47px;
+    box-sizing: border-box;
+}
+.evaluate_img{
+    float: left;
+    width: 190px;
+    height: 274px;
+}
+.evaluate_img p{
+    color: #333;
+}
+.evaluate_right{
+    width: 571px;
+    float: right;
+}
+.flower{
+    height: 50px;
+}
+.flower span{
+    margin-right: 53px;
+}
+.evaluate_right_text{
+    height: 171px;
+    padding: 5px;
+    border: 1px solid #c7dfeb;
+    box-sizing: border-box;
+    background: #eef8fd;
+}
+#evaluate{
+    width: 560px;
+    height: 128px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize:none;
+}
+.evaluate_right_text button{
+    width: 63px;
+    height: 21px;
+}
+.picBtn1{
+    background: #93b4c6;
+    border: 1px solid #759db2;
+}
+.picBtn2{
+    background: #e5a86a;
+    border: 1px solid #d99b5d;
+}
+#evaluate,.evaluate_right_text span{
+     color: #999;
+}
+.evaluate_right_text div{
+    float: right;
+    margin: 5px;
+}
+/*评价星级*/
+.star_level{
+    height: 55px;
+}
+.star_level span{
+    color: #333;
+    margin-right: 100px;
+    line-height: 55px;
+}
+.star_level span img{
+    cursor: pointer;
+}
+/*印象*/
+.cen1_footer{
+    height: 220px;
+    padding: 35px 0px 0 188px;
+}
+.cen1_footer>span{
+    position: relative;
+    top: -50px;
+}
+.cen1_footer span{
+    display: inline-block;
+    width: 105px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+}
+.impression{
+    display: inline-block;
+    width: 650px;
+    height: 110px;
+}
+.impression span{
+    border: 1px solid #eee;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+}
+/*提交评价*/
+#cen_btn{
+    display: block;
+    width: 187px;
+    height: 48px;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: bold;
+    background: #e10706;
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+    border: 1px solid red;
+    cursor: progress;
+}
+.redBorder{
+    background: url("../image/评论页/bground.jpg")no-repeat;
+}

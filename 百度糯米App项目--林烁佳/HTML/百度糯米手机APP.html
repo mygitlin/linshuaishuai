@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>百度糯米</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css2/百度糯米.css">
+    <script src="../js2/百度糯米.js"></script>
+    <script>
+        window.onload = function () {
+            let startX,x,aboveX = 0;
+
+            let a = document.getElementsByClassName('ul_Drag_img')[0];
+
+            function touchSatrt(e){//触摸
+                e.preventDefault();   // 取消原本的事件
+                let touch = e.touches[0];  // 当前位于屏幕上的所有手指的一个列表
+                // console.log(e.touches[0]);
+                startX = touch.pageX;   //刚触摸时的坐标
+            }
+
+            function touchMove(e){//滑动
+                e.preventDefault();      // 取消原本的事件
+                let  touch = e.touches[0];
+                // console.log(e.touches[0]);
+                x = touch.pageX - startX;//滑动的距离
+
+                //inner.style.webkitTransform = 'translate(' + 0+ 'px, ' + y + 'px)';  //也可以用css3的方式
+
+                if((aboveX +x)>0){
+                    a.style.left = (aboveX++)+ 'px';
+                }else if((aboveX +x)< -390){
+                    a.style.left = (aboveX--)+ 'px';
+                } else {
+                    a.style.left= aboveX +x+"px";//这一句中的aboveY是inner上次滑动后的位置
+                    console.log(a.style.left)
+                }
+            }
+
+            function touchEnd(e){//手指离开屏幕
+                e.preventDefault();
+                aboveX=parseInt(a.style.left);//touch结束后记录内部滑块滑动的位置 在全局变量中体现 一定要用parseInt()将其转化为整数字;
+                if(aboveX>0){
+                    $('.ul_Drag_img').animate({'left':0},500);
+                    aboveX = 0;
+                }else if(aboveX< -390){
+                    $('.ul_Drag_img').animate({'left':-390},500);
+                    aboveX = -390;
+                }
+            }//
+
+            document.getElementsByClassName("Drag_img")[0].addEventListener('touchstart', touchSatrt,false);
+            document.getElementsByClassName("Drag_img")[0].addEventListener('touchmove', touchMove,false);
+            document.getElementsByClassName("Drag_img")[0].addEventListener('touchend', touchEnd,false);
+        }
+    </script>
+</head>
+<body>
+<div id="baidu">
+    <header id="header">
+        <!--顶部广州和用户按钮,顶部搜索框- -->
+        <div class="hd_box1">
+            <!--顶部广州和用户按钮-->
+            <div class="hd_top">
+                <span class="hd_top_color1">广州 <i class="glyphicon glyphicon-menu-down hd_top_color1" aria-hidden="true"></i></span>
+                <span id="user" class="glyphicon glyphicon-user hd_top_color1" aria-hidden="true"></span>
+            </div>
+            <!--顶部搜索框-->
+            <div class="search">
+                <div class="btn_search">
+                    <div class="btn_text">
+                        <i class="glyphicon glyphicon-search"></i>
+                        <span>搜索商家或地点</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--顶部分类导航-->
+        <div class="hd_nav">
+            <ul>
+                <li>
+                    <a href="美食.html">
+                        <img src="../baiduIMG/nav1.png"/>
+                        <span>美食</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../baiduIMG/nav2.png"/>
+                        <span>电影演出</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../baiduIMG/nav3.png"/>
+                        <span>酒店</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../baiduIMG/nav4.png"/>
+                        <span>周边游</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../baiduIMG/nav5.png"/>
+                        <span>外卖</span>
+                    </a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../baiduIMG/nav6.png"/>
+                        <span>休闲娱乐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../baiduIMG/nav7.png"/>
+                        <span>火车票</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../baiduIMG/nav8.png"/>
+                        <span>充值中心</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../baiduIMG/nav9.png"/>
+                        <span>KTV</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../baiduIMG/nav10.png"/>
+                        <span>招聘</span>
+                    </a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <section id="main">
+        <!--小轮播-->
+        <div class="plate1">
+            <div class="plate1_dis">
+                <ul class="img_main">
+                    <li>
+                        <a href="#">
+                            <div class="img_position img1"></div>
+                            <div class="text_lunbo">
+                                <p>商圈头条
+                                    <span class="text_line"></span>
+                                    白色情人节，广州最适合情侣虐狗的地方，美景美食通通都有！
+                                </p>
+                                <span>14127人浏览</span>
+                            </div>
+                            <div class="img_lunbo2">›</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img_position img2"></div>
+                            <div class="text_lunbo">
+                                <p>商圈头条
+                                    <span class="text_line"></span>
+                                    不去大排档吃宵夜，今晚可能会睡不着....
+                                </p>
+                                <span>14127人浏览</span>
+                            </div>
+                            <div class="img_lunbo2">›</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img_position img3"></div>
+                            <div class="text_lunbo">
+                                <p>商圈头条
+                                    <span class="text_line"></span>
+                                    周末|广州这几家小酒馆，治愈你的心和胃。
+                                </p>
+                                <span>14127人浏览</span>
+                            </div>
+                            <div class="img_lunbo2">›</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img_position img4"></div>
+                            <div class="text_lunbo">
+                                <p>商圈头条
+                                <span class="text_line"></span>
+                                    广州排队也要喝的炖品店，每一碗都暖到心坎里！
+                                </p>
+                                <span>14127人浏览</span>
+                            </div>
+                            <div class="img_lunbo2">›</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img_position img1"></div>
+                            <div class="text_lunbo">
+                                <p>商圈头条
+                                    <span class="text_line"></span>
+                                    白色情人节，广州最适合情侣虐狗的地方，美景美食通通都有！
+                                </p>
+                                <span>14127人浏览</span>
+                            </div>
+                            <div class="img_lunbo2">›</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--六个活动-->
+        <div class="plate2">
+            <div class="six_box">
+                <div class="six_box_1">
+                    <div class="text_six_box">
+                        <h4>精选排行</h4>
+                        <span>本地排行榜</span>
+                    </div>
+                    <div class="img_position2">
+                        <img src="https://gss0.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/nuomi/pic/item/d788d43f8794a4c21a138d0f05f41bd5ad6e39e5.jpg" />
+                    </div>
+                </div>
+                <div class="six_box_1">
+                    <div class="text_six_box">
+                        <h4>糯米心选</h4>
+                        <span>好铺任你挑</span>
+                    </div>
+                    <div class="img_position2">
+                        <img src="https://gss0.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/nuomi/pic/item/4d086e061d950a7bd567441b01d162d9f3d3c99b.jpg" />
+                    </div>
+                </div>
+                <div class="six_box_1">
+                    <div class="text_six_box">
+                        <h4>疯狂砍价</h4>
+                        <span>开年冰点价</span>
+                    </div>
+                    <div class="img_position2">
+                        <img src="https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/a08b87d6277f9e2f1a98c7d11430e924b999f3be.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="six_box">
+                <div class="six_box_1">
+                    <div class="text_six_box">
+                        <h4>0元包邮</h4>
+                        <span>华为新机免费</span>
+                    </div>
+                    <div class="img_position2">
+                        <img src="https://gss0.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/nuomi/pic/item/8b13632762d0f703d6687ac804fa513d2797c5c8.jpg" />
+                    </div>
+                </div>
+                <div class="six_box_1">
+                    <div class="text_six_box">
+                        <h4>天天特惠</h4>
+                        <span>狂享折上折</span>
+                    </div>
+                    <div class="img_position2">
+                        <img src="https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/dbb44aed2e738bd4c6f515e2ab8b87d6267ff909.jpg" />
+                    </div>
+                </div>
+                <div class="six_box_1">
+                    <div class="text_six_box">
+                        <h4>周末放价</h4>
+                        <span>约惠看电影</span>
+                    </div>
+                    <div class="img_position2">
+                        <img src="https://gss0.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/18d8bc3eb13533faf8b08f27a4d3fd1f41345bb0.jpg    " />
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+        <!--拖拽图-->
+        <div class="Drag_img"  ondragstart="return false;">
+            <ul class="ul_Drag_img">
+                <li>
+                    <a href="#">
+                        <img ondragstart="return false;" src="https://gss0.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/nuomi/pic/item/0b55b319ebc4b745bcd6701bc3fc1e178a821579.jpg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img ondragstart="return false;" src="https://gss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/2fdda3cc7cd98d10524a22382d3fb80e7bec9018.jpg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img ondragstart="return false;" src="https://gss0.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/95eef01f3a292df592b7801cb0315c6034a87346.jpg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img ondragstart="return false;" src="https://gss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/8cb1cb1349540923a5134b779e58d109b3de4944.jpg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img ondragstart="return false;" src="https://ss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/9922720e0cf3d7cae2aa967ffe1fbe096b63a95f.jpg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img ondragstart="return false;" src="https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/4ec2d5628535e5dd3a910fd67ac6a7efce1b627e.jpg"/>
+                    </a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+            <!--<div class="clear"></div>-->
+        </div>
+        <!--广告位轮播-->
+        <div class="plate3">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img ondragstart="return false;" src="https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/f2deb48f8c5494eefee4406d21f5e0fe98257efb.jpg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img ondragstart="return false;" src="https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/0df431adcbef7609a6c5d7eb22dda3cc7dd99efc.jpg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img ondragstart="return false;" src="https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/472309f790529822dccc88b7dbca7bcb0b46d4c3.jpg"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--猜你喜欢-->
+        <div class="plate4">
+            <div class="like_text">
+                <span>猜你喜欢</span>
+                <hr>
+            </div>
+            <section class="like_plate">
+                <a href="#">
+                    <h4>春江水暖，登山赏花约起来→</h4>
+                    <div class="aa">
+                        <img src="https://gss0.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/nuomi/pic/item/2cf5e0fe9925bc314eab48ec52df8db1ca1370cb.jpg"/>
+                    </div>
+                </a>
+            </section>
+            <hr>
+        </div>
+        <!--没了-->
+        <div class="main_foot">
+            <span>加载更多</span>
+        </div>
+    </section>
+    <footer class="over">
+        <span>©nuomi.com 京ICP证060807号</span>
+        <span>
+            <img src="https://m.nuomi.com/static/img/footer/beian.png"/>
+            京公网安备 11000002000001号
+        </span>
+    </footer>
+</div>
+<div class="Gtop glyphicon glyphicon-arrow-up"></div>
+</body>
+</html>

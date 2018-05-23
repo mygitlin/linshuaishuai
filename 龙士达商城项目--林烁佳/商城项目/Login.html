@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_508933_mc3bi9kozukxogvi.css">
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/Login.js"></script>
+</head>
+<body>
+<!--头部-->
+<header>
+    <div id="herderBox">
+        <a href="HomePage.html" class="smallA" ><div id="loginLogo"></div></a>
+    </div>
+</header>
+<!--调查问卷-->
+<div id="loginQuestion">
+    <div class="loginText">
+        <span>
+            <a href="#">
+                <i class="iconfont icon-yonghufankui"></i>
+                登录页面，调查问卷
+            </a>
+        </span>
+    </div>
+</div>
+<!--登录盒子-->
+<article>
+    <form action="HomePage.html">
+        <div id="loginMotion">
+            <a href="#">
+                <div class="picBox1"></div>
+            </a>
+        </div>
+        <div id="loginBox">
+            <div class="accountScan">
+                <div class="account">
+                    账号密码登录
+                </div>
+                <div class="Scan">
+                    扫码登录
+                </div>
+            </div>
+            <div class="input_User">
+                <div class="userAnpassw">
+                    <div id="userText">
+                        <input type="text" placeholder="手机号/邮箱/账号" id="userBox" pattern="^[A-Za-z0-9]+$"/>
+                    </div>
+                    <div id="passText">
+                        <input type="password" id="passWord"/>
+                    </div>
+
+                </div>
+
+                <div class="textOne">
+                <span>
+                    <a href="#">忘记密码 ？</a>
+                </span>
+                </div>
+                <div class="loginBtn">
+                    <input type="submit" value="登录" class="butTon submit" id="loGin"/>
+                </div>
+                <div class="partNer">
+                    <span>使用合作网站账号登录龙士达：</span>
+                    <div class="partnerLogin">
+                        <div class="weChat"></div>
+                        <div class="aliPay"></div>
+                        <div class="QQ"></div>
+                        <div class="siNa"></div>
+                        <div class="renRen"></div>
+                    </div>
+                </div>
+                <div class="regisTer">
+                    <p>
+                        <a href="Register.html">
+                            <i class="iconfont icon-rightcircleo"></i>
+                            <span>立即注册</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div id="scan_Code"></div>
+        </div>
+    </form>
+</article>
+<!--底部盒子-->
+<footer>
+    <div id="fooTer">
+        <span>Copyrifht&copy;2011-2014 Yougou Technology Co.,Ltd.粤ICP备09070608号-4增值电信业务经营许可证:粤B2-20090203</span>
+    </div>
+</footer>
+</body>
+</html>

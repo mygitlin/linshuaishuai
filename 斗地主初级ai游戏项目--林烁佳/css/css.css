@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('../images/222.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+}
+.left{
+    width:20%;
+    height: 800px;
+    float: left;
+    padding-top: 100px;
+    position: relative;
+    /*background: red;*/
+}
+.mid{
+    width:60%;
+    height: 950px;
+    float: left;
+    /*background: blue;*/
+}
+.lala{
+    position: absolute;
+    top: 50%;
+    left: 875px;
+    /*display: none;*/
+    opacity: 0;
+}
+.mid_top{
+    width: 100%;
+    height: 500px;
+    float: left;
+    /*background: #000;*/
+}
+.mid_end{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    float: left;
+    margin-top: 220px;
+    /*background: #fff;*/
+}
+.right{
+    width:20%;
+    height: 800px;
+    float: right;
+    padding-top: 100px;
+    position: relative;
+    /*background: yellow;*/
+}
+.left,.right,.mid_end{
+    z-index: 100;
+}
+.all_poker{
+    width: 121px;
+    height: 159px;
+    margin: 100px auto 0;
+    position: relative;
+    /*background: #fff;*/
+}
+.all_poker li{
+    position: absolute;
+
+}
+.temp_poker{
+    width: 121px;
+    height: 159px;
+    margin: 100px auto 0;
+    position: relative;
+}
+.back {
+    width:121px;
+    height: 159px;
+    background: url('../images/14.png') 0 -180px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(100,100,100,0.5);
+    position: absolute;
+    z-index: 100;
+}
+.play_1, .play_2, .play_3{
+    width:121px;
+    height: 159px;
+    margin: 20px auto 0;
+    position: relative;
+}
+.play_1 li,.play_2 li,.play_3 li{
+    position: absolute;
+    box-shadow: 0 1px 1px #444;
+}
+.robPoker,.getBtn{
+    position: absolute;
+    width: 450px;
+    height: 50px;
+}
+.getBtn{
+    display: block;
+}
+.left .robPoker,.left .getBtn{
+    transform:rotate(90deg);
+    right: -150px;
+    top: 400px;
+}
+.right .robPoker,.right .getBtn{
+    transform:rotate(90deg);
+    left: -150px;
+    top: 400px;
+}
+.mid_end .robPoker,.mid_end .getBtn{
+    top: -50px;
+    left: 420px;
+}
+.robPoker li,.getBtn li{
+    float: left;
+}
+.robPoker li{
+    display: none;
+    opacity: 0;
+}
+.robPoker li,.getBtn li{
+    margin-right: 15px;
+}
+.robPoker li img,.getBtn li img{
+    width: 130px;
+    height: 40px;
+}
+.time{
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 50px;
+    font-size: 100px;
+    color: #fff;
+    left: 48%;
+    top: 40%;
+    z-index: 500;
+    opacity: 0;
+}
+.start_btn img{
+    width: 120px;
+    height: 46px;
+    /*border: 1px solid #ddd;*/
+    position: absolute;
+    left: 47%;
+    top: 43%;
+    z-index: 500;
+    cursor: pointer;
+}
+.AI_start{
+    position: absolute;
+    width: 100px;
+    height: 48px;
+    background: url("../images/AI_strat_02.png") no-repeat;
+    background-size: 100%;
+}
+.aiImg1{
+    background: url("../images/AI_end_02.png") no-repeat;
+    background-size: 100%;
+}
+.select{
+    top: -25px;
+}
+.select1{
+    left: -25px;
+}
+.select2{
+    left: 25px;
+}
+.all_poker1{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding-top: 100px;
+}
+.all_poker1 li{
+    margin: auto;
+}
+.aa{
+    position: absolute;
+}
+
+
+/*开始封面*/
+#index1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
+    /*background-image: url('../images/绝地求生封面.jpg');*/
+    background-size: 100%;
+    overflow: hidden;
+}
+.index_box{
+    width: 580px;
+    height: 100px;
+    /*border: 1px solid #ddd;*/
+    position: absolute;
+    left: 35%;
+    top: 38%;
+    z-index: 100;
+    /*overflow: hidden;*/
+    /*cursor: pointer;*/
+}
+.index_top{
+    width: 100%;
+    height: 50%;
+    background: url("../images/绝地求生封面_01.jpg") no-repeat bottom/100%;
+    background-size: cover;
+    position: relative;
+}
+.index_end{
+    width: 100%;
+    height: 50%;
+    background: url("../images/绝地求生封面_02.jpg") no-repeat top/100%;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+/*角色头像*/
+.user,.user2,.user3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /*background: #ccc;*/
+    z-index: 10;
+}
+.user{
+    top: 290px;
+    left: 10px;
+    background: url("../images/农民1.jpg") no-repeat;
+    background-position: -250px -10px;
+}
+.user2{
+    top: 50px;
+    left: 50px;
+    background: url("../images/农民2.jpg") no-repeat;
+    background-position: -260px -30px;
+}
+.user3{
+    top: 290px;
+    right: 20px;
+    background: url("../images/地主.jpg") no-repeat;
+    background-position: -210px -10px;
+}
+
+
+/*角色名称*/
+.name,.name2,.name3{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.name,.name2{
+    top: 110px;
+    left: 20px;
+}
+.name3{
+    top: 110px;
+    right: -25px;
+}
+.jifen{
+    display: block;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    top: 120px;
+    left: 5px;
+}
+/*积分*/
+.jifen span{
+    color: #ff4148;
+    font-weight: bold;
+}
+/*地主或者农民*/
+.dn{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    top: -80px;
+    left: 30px;
+}
+
+
+/*游戏结束*/
+.overgame{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2000;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.Resume{
+    width: 600px;
+    height: 350px;
+    margin: 200px auto;
+    padding-top: 65px;
+    background: url("../images/游戏结束界面.jpg") no-repeat;
+}
+.win{
+    width: 200px;
+    height: 50px;
+    /*border: 1px solid #ccc;*/
+    margin-left: 28px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+.Resume p{
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 25px;
+}
+.Resume p span{
+    margin-right: 5px;
+}
+.stratGame2{
+    width: 100px;
+    height: 30px;
+    margin-left: 25px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px #333;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    outline:none;
+    cursor: pointer;
+}

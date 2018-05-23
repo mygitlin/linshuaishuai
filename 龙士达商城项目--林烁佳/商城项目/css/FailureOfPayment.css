@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.orderFailure{
+    width: 1200px;
+    height: 296px;
+    border: 1px solid #e20606;
+    margin: 90px auto 90px auto;
+    position: relative;
+}
+.orderFailure_left{
+    width: 640px;
+    height: 170px;
+    border-right: 1px solid #cccccc;
+    margin: 60px 0 0 60px;
+
+}
+.orderFailure_left>ul:nth-child(1){
+    margin-top: 20px;
+}
+.orderFailure_left>ul:nth-child(1)>li:nth-child(1){
+    background: url("../image/付款失败页/fail.png")no-repeat;
+    height: 38px;
+    width: 400px;
+    line-height: 38px;
+}
+.orderFailure_left>ul:nth-child(1)>li:nth-child(1) span{
+    margin-left: 45px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.orderFailure_left>ul:nth-child(1)>li:nth-child(2){
+    margin-left: 45px;
+    margin-top: 16px;
+}
+.orderFailure_left>ul:nth-child(2)>li{
+    width: 100px;
+    height: 34px;
+    border: 1px solid #cccccc;
+    background: #eeeeee;
+    float: left;
+    margin:24px 0 0 45px;
+    text-align: center;
+    line-height: 34px;
+}
+.orderFailure_left>ul:nth-child(2)>li:nth-child(3){
+    border: none;
+    background: #ffffff;
+    margin-left: 0;
+    margin-top: 30px;
+    color: #e20606;
+}
+.orderFailure_right{
+    width: 190px;
+    height: 178px;
+    float: left;
+    position: absolute;
+    right: 105px;
+    top: 60px;
+    text-align: center;
+
+}
+.orderFailure_right p{
+    font-size: 20px;
+}
+.orderFailure_left>ul:nth-child(2)>li:nth-child(3)>a:visited{
+    color: red;
+}
+.orderFailure_left>ul:nth-child(2)>li:nth-child(3)>a:hover{
+    color: #666;
+}

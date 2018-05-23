@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>绝地求生斗地主</title>
+	<link rel="stylesheet" href="css/animation.css">
+	<link rel="stylesheet" href="css/css.css">
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/game.js"></script>
+</head>
+<body>
+<!--游戏界面-->
+<div class="left">
+        <div class="user">
+            <span class="name">伏地魔1</span>
+            <span class="jifen">分数：<span></span></span>
+			<span class="dn"></span>
+        </div>
+
+		<ul class="robPoker">
+			<li class="rob">
+				<!--<span>抢地主</span>-->
+				<img src="images/叫地主.png"/>
+			</li>
+			<li class="noRob">
+				<!--<span>不抢</span>-->
+				<img src="images/不抢.png"/>
+			</li>
+		</ul>
+		<ul class="getBtn">
+			<li class="get">
+				<!--<span>出牌</span>-->
+				<img src="images/出牌.png"/>
+			</li>
+			<li class="noget">
+				<!--<span>不出</span>-->
+				<img src="images/不出.png"/>
+			</li>
+			<li class="Prompt">
+				<img src="images/提示.png"/>
+			</li>
+		</ul>
+		<ul class="play_1 play"></ul>
+	</div>
+<div class="mid">
+	<img class="lala" src="" />
+	<div class="mid_top">
+			<div class="AI_start"></div>
+			<ul class="all_poker"></ul>
+			<span class="time"></span>
+			<div class="start_btn">
+				<img src="images/strat.jpg" />
+			</div>
+			<ul class="all_poker1"></ul>
+		</div>
+	<div class="mid_end">
+		<div class="user2">
+			<span class="name2">伏地魔2</span>
+			<span class="jifen">分数：<span></span></span>
+			<span class="dn"></span>
+		</div>
+		<ul class="robPoker">
+				<li class="rob">
+					<!--<span>抢地主</span>-->
+					<img src="images/叫地主.png"/>
+				</li>
+				<li class="noRob">
+					<!--<span>不抢</span>-->
+					<img src="images/不抢.png"/>
+				</li>
+			</ul>
+		<ul class="getBtn">
+				<li class="get">
+					<!--<span>出牌</span>-->
+					<img src="images/出牌.png"/>
+				</li>
+				<li class="noget">
+					<!--<span>不出</span>-->
+					<img src="images/不出.png"/>
+				</li>
+				<li class="Prompt">
+					<img src="images/提示.png"/>
+				</li>
+			</ul>
+		<ul class="play_2 play"></ul>
+	</div>
+	<!-- 定义出牌动画 -->
+	<!--飞机-->
+	<div class="animation_plane">
+		<!-- <audio id="player" autoplay="autoplay">
+                   <source src="audio/飞机.mp3"/>
+        </audio> -->
+	</div>
+	<!--炸弹-->
+	<div class="animation_bomb">
+		<!-- <audio id="player" autoplay="autoplay">
+                   <source src="audio/炸弹.mp3"/>
+        </audio> -->
+	</div>
+	<!--王炸-->
+	<div class="animation_wangbomb">
+		<!-- <audio id="player" autoplay="autoplay">
+                   <source src="audio/背景bgm.mp3"/>
+        </audio> -->
+	</div>
+	<!--顺子-->
+	<div class="animation_straight">
+		<!-- 	<audio id="player" autoplay="autoplay">
+   					<source src="audio/背景bgm.mp3"/>
+			</audio> -->
+		<div class="animation_straight_shun">
+			<img style="height: 100px;width: 150px;" src="./images/顺子.png" alt="">
+		</div>
+		<div class="animation_straight_jiantuo">
+			<img style="height: 80px;width: 250px;" src="./images/箭头.PNG" alt="">
+		</div>
+	</div>
+	<!--连对-->
+	<div class="animation_pair">
+		<!-- 	<audio id="player" autoplay="autoplay">
+   					<source src="audio/背景bgm.mp3"/>
+			</audio> -->
+		<div class="animation_pair_left">
+			<img style="height: 100px;width: 75px;" src="./images/连.png" alt="">
+		</div>
+		<div class="animation_pair_right">
+			<img style="height: 100px;width: 75px;" src="./images/对.PNG" alt="">
+		</div>
+	</div>
+	<!-- 定义出牌动画end -->
+</div>
+<div class="right">
+        <div class="user3">
+            <span class="name3">伏地魔3</span>
+            <span class="jifen">分数：<span></span></span>
+			<span class="dn"></span>
+        </div>
+		<ul class="robPoker">
+			<li class="rob">
+				<!--<span>抢地主</span>-->
+				<img src="images/叫地主.png"/>
+			</li>
+			<li class="noRob">
+				<!--<span>不抢</span>-->
+				<img src="images/不抢.png"/>
+			</li>
+		</ul>
+		<ul class="getBtn">
+			<li class="get">
+				<!--<span>出牌</span>-->
+				<img src="images/出牌.png"/>
+				<!-- 动画出牌音效-->
+				<audio class="bomb" src="audio/炸弹.mp3"/></audio>
+				<audio class="buqiang" src="audio/不抢.mp3"/></audio>
+				<audio class="plane" src="audio/飞机.mp3"/></audio>
+				<audio class="qiang" src="audio/抢地主.mp3"/></audio>
+				<audio class="bgmusic" loop="loop" src="audio/背景bgm2.mp3"/></audio>
+				<audio class="huojian" src="audio/火箭.mp3"/></audio>
+				<audio class="shunzi" onplay="this.currentTime=15" src="audio/顺子.mp3"/></audio>
+				<audio class="liandui" onplay="this.currentTime=15"src="audio/顺子.mp3"/></audio>
+				<audio class="huojian_1" src="audio/王炸.ogg"/></audio>
+				<audio class="plane_1" src="audio/飞机.ogg"/></audio>
+				<audio class="liandui_1" src="audio/连对.ogg"/></audio>
+				<audio class="shunzi_1" src="audio/顺子.ogg"/></audio>
+				<audio class="buchu" src="audio/要不起.mp3"/></audio>
+				<audio class="sandaiyi" src="audio/3-1.ogg"/></audio>
+				<audio class="sandaier" src="audio/3-2.ogg"/></audio>
+				<audio class="type1" src=""/></audio>
+			</li>
+			<li class="noget">
+				<!--<span>不出</span>-->
+				<img src="images/不出.png"/>
+			</li>
+			<li class="Prompt">
+				<img src="images/提示.png"/>
+			</li>
+		</ul>
+		<ul class="play_3 play"></ul>
+	</div>
+<!--结算页面-->
+<div class="overgame">
+	<div class="Resume">
+		<div class="win">大吉大利，今晚吃鸡</div>
+		<p>
+			<span>伏地魔1:</span>
+			<span></span>
+			<span></span>
+		</p>
+		<p>
+			<span>伏地魔2:</span>
+			<span></span>
+			<span></span>
+		</p>
+		<p>
+			<span>伏地魔3:</span>
+			<span></span>
+			<span></span>
+		</p>
+		<button class="stratGame2">再来一局</button>
+	</div>
+</div>
+<!--最开始封面-->
+<div id="index1">
+	<div class="index_top"></div>
+	<div class="index_end"></div>
+	<div class="index_box"></div>
+</div>
+
+</body>
+</html>

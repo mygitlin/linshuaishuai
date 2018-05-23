@@ -1,0 +1,239 @@
+header{
+    width: 100%;
+    height: 95px;
+}
+#herderBox{
+    width: 1200px;
+    height: 95px;
+    margin: 0 auto;
+}
+.smallA{
+    width: 355px;
+    height: 95px;
+    display: block;
+}
+#loginLogo{
+    width: 355px;
+    height: 95px;
+    background: url("../image/登录/login_logo.jpg")no-repeat center;
+}
+#loginQuestion{
+    width: 100%;
+    height: 25px;
+    background: #f6f6f5;
+    border-bottom: 1px solid #dfdfdf;
+}
+.loginText{
+    width: 1200px;
+    height: 25px;
+    line-height: 25px;
+    margin:0 auto;
+}
+.loginText span{
+    width: 185px;
+    height: 25px;
+    display: block;
+    margin: auto 0 auto auto;
+}
+.loginText a{
+    color: #ff0000;
+    font-size: 14px;
+}
+.icon-yonghufankui{
+    font-weight: bold;
+    color:#ff0000 ;
+}
+article{
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+}
+#loginMotion{
+    width: 810px;
+    height: 550px;
+}
+.picBox1{
+    width: 810px;
+    height: 550px;
+    background:url("../image/登录/login_motion.jpg")no-repeat left center;
+}
+#loginBox{
+    width: 380px;
+    height: 450px;
+    top: 50px;
+    right: 0;
+    border: 1px solid #dfdfdf;
+    position: absolute;
+}
+.accountScan{
+    width: 350px;
+    height: 40px;
+    margin: 25px auto;
+}
+.accountScan div{
+    width: 175px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.account{
+    background: #333333;
+    color: #fff;
+}
+.Scan{
+    background:#f3f3f3 ;
+    color: #333333;
+}
+.input_User{
+    margin:0 auto 0;
+}
+#scan_Code{
+    display: none;
+    margin: 0 auto 0;
+    background: url("../image/登录/raw_er.jpg")no-repeat center center;
+    width: 315px;
+    height: 315px;
+    position: relative;
+}
+.userAnpassw{
+    margin: 30px auto;
+    width: 315px;
+    height: 105px;
+}
+.userAnpassw input{
+    width: 313px;
+    height: 38px;
+    /*border: 1px solid #dfdfdf;*/
+    font-size: 16px;
+    text-indent: 10px;
+    /*display: block;*/
+}
+#userText{
+    width: 313px;
+    height: 38px;
+    background: url("../image/登录/login_user.jpg")no-repeat left center;
+    line-height: 38px;
+    border: 1px solid #dfdfdf;
+}
+#userBox{
+     border: none;
+     width: 264px;
+     margin-left:48px ;
+     outline:none
+}
+#passText{
+    width: 313px;
+    height: 38px;
+    background: url("../image/登录/login_password.jpg")no-repeat left center;
+    line-height: 38px;
+    margin-top: 25px;
+    border: 1px solid #dfdfdf;
+}
+#passWord{
+    border: none;
+    width: 264px;
+    margin-left:48px ;
+    outline:none;
+
+}
+.textOne{
+    width: 315px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+.textOne span{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.textOne span a:link{
+    color: #666666;
+}
+.textOne span a:hover{
+    color: #ff0000;
+}
+.loginBtn{
+    width: 315px;
+    height: 40px;
+    margin: 20px auto;
+}
+.butTon{
+    width: 315px;
+    height: 40px;
+    background: #ff0000;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+.partNer{
+    width: 315px;
+    height: 85px;
+    margin: 0 auto;
+    text-align: center;
+}
+.partnerLogin{
+    width: 315px;
+    height: 40px;
+}
+.partnerLogin div{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 15px 10px;
+    cursor: pointer;
+}
+.partnerLogin div:nth-child(1){
+    margin-left: 20px;
+}
+.weChat{
+    background: url("../image/登录/login_WeChat.jpg")no-repeat center center;
+}
+.aliPay{
+    background: url("../image/登录/login_alipay.jpg")no-repeat center center;
+}
+.QQ{
+    background: url("../image/登录/login_qq.jpg")no-repeat center center;
+}
+.siNa{
+    background: url("../image/登录/login_sina.jpg")no-repeat center center;
+}
+.renRen{
+    background: url("../image/登录/login_Renren.jpg")no-repeat center center;
+}
+.regisTer{
+    width: 100%;
+    position: relative;
+    height: 20px;
+}
+.regisTer p{
+    position: absolute;
+    right: 20px;
+    height: 20px;
+    width: 100px;
+}
+.icon-rightcircleo{
+    color: #ff0000;
+    font-weight: bold;
+    display: block;
+}
+.regisTer p span{
+    color: #ff0000;
+    display: block;
+    margin: -18px auto auto 20px;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    border-top:1px solid #dfdfdf ;
+}
+#fooTer{
+    width: 1200px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 30px;
+}

@@ -1,0 +1,468 @@
+div{
+    border: none;
+}
+#carouselBox{
+    width: 1900px;
+    height: 545px;
+    margin: 0 auto;
+    position: relative;
+}
+.picBox{
+    width: 1900px;
+    height: 545px;
+    margin: 0 auto;
+    position: relative;
+}
+.picBox div{
+    position: absolute;
+    top: 0;
+}
+.pic1{
+    width: 100%;
+    height: 100%;
+    background: url("../image/首页/banner1.png")no-repeat center center;
+}
+.pic2{
+    width: 100%;
+    height: 100%;
+    background: url("../image/首页/banner2.png")no-repeat center center;
+}
+.pic3{
+    width: 100%;
+    height: 100%;
+    background: url("../image/首页/banner3.png")no-repeat center center;
+}
+.numBer{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    margin:0 auto ;
+}
+.numBer li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #ffffff;
+    background: black;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+.tag {
+    width:30px;
+    height: 30px;
+    font-size:20px;
+    color:#fff;
+    display:block;
+    line-height:33px;
+    text-decoration:none;
+    border-radius:50% ;
+}
+.tag:hover{
+    color: #fff;
+}
+.bg{
+    border-radius:50% ;
+    background: #ff0000;
+    color: #fff;
+}
+/*中间大盒子*/
+.width{
+    width: 1200px;
+}
+#middleBox{
+    margin: 150px auto 0;
+}
+.newSpot{
+    height: 1000px;
+}
+.newSpot>div{
+    float: left;
+    margin-left: 10px;
+}
+.newSpot div:nth-child(1){
+    margin-left: 0;
+}
+.newSpot div:nth-child(3){
+    margin-left: 0;
+}
+.smallBox{
+    float: left;
+}
+.magTop{
+    margin-top: 10px;
+}
+.magTop:nth-child(1){
+    margin-top: 0;
+}
+.cc{
+    width: 300px;
+    height: 475px;
+    position: relative;
+}
+.newSpotBetween{
+    width: 580px;
+}
+.topBottn{
+    height: 240px;
+}
+.betwen{
+    height: 490px;
+}
+.picImg1{
+    width: 294px;
+    height: 475px;
+    margin: 0 auto;
+}
+
+.topBox{
+   left:10px ;
+}
+.bottomBox{
+    margin-top:45px;
+}
+.priceBox{
+    position: absolute;
+    background: #f3f5f7;
+    width: 294px;
+    height: 40px;
+    bottom: 0;
+
+}
+.priceBox p{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.priceName a:link{
+    color: #666666;
+    font-size: 16px;
+}
+.priceName a:hover{
+    color: #ff0000;
+    font-size: 16px;
+}
+.priceText{
+    font-size: 14px;
+    color: #d81e06;
+    padding: 10px;
+}
+.titleBox{
+    height: 75px;
+    background: url("../image/首页/首页_03.jpg")no-repeat center;
+    position: relative;
+}
+.titleOne{
+    position: absolute;
+    top: 0;
+    left: 540px;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+ }
+.moBox{
+    position: absolute;
+    right: 20px;
+    top:30px;
+}
+.topBottn div{
+    margin: 0 auto auto 0px;
+}
+.smallBox{
+    width: 193px;
+    /*border-right:1px solid #cfcccc ;*/
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.newSpotBetween div:nth-child(2){
+    margin-left:0;
+}
+.smallPic{
+    width: 193px;
+    height: 100%;
+}
+.bigPic{
+    width: 580px;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+}
+.bigPic_ul{
+    width: 580px;
+    height: 480px;
+    position: absolute;
+}
+.bigPic_ul img{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.smallBox p{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.smallBox img{
+    width: 193px;
+    height: 100%;
+}
+.smallBox:nth-child(3){
+    border: none;
+}
+.smallBox:nth-child(6){
+    border: none;
+}
+.huanyuan div{
+    margin: 0 auto auto 0;
+}
+.bannerBox{
+    width: 1200px;
+    height: 186px;
+    margin-top: 90px;
+    overflow: hidden;
+    position: relative;
+}
+.bannerPic{
+    height: 186px;
+    width: 1200px;
+    position: absolute;
+}
+.bannerPic img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.bannerPic1{
+    height: 186px;
+    width: 1200px;
+    position: absolute;
+}
+.bannerPic1 img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.titleBox{
+    margin-top: 30px;
+}
+/*推荐商品*/
+.recomMend{
+    height: 780px;
+
+}
+.recomMend div{
+    float: left;
+}
+.recomPic{
+    height: 355px;
+}
+.recomWidth1{
+    width: 291px;
+    overflow: hidden;
+    position: relative;
+    /*margin-right:10px ;*/
+}
+.recomTop div{
+    margin-right: 10px;
+}
+.recomTop div:nth-child(3){
+    margin-right: 0;
+}
+.recomBottom{
+    margin-top: 15px;
+}
+.recomBottom div{
+    margin-right: 11px;
+}
+.recomBottom div:nth-child(4){
+    margin-right: 0;
+}
+.recomWidth2{
+    width: 595px;
+    height: 353px;
+}
+.recomWidth2 img{
+    width: 595px;
+    height: 353px;
+    display: none;
+}
+.imgBox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.recomMask{
+    width:291px;
+    height:355px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: none;
+    background: rgba(5,210,200,.2);
+}
+.recomWidth1 p{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.recomWidth1 span{
+    font-size: 18px;
+}
+.recomWidth1 a:link{
+    font-size: 20px;
+    color: #cfcccc;
+}
+.recomWidth1 a:hover{
+    font-size: 20px;
+    color: #ff0000;
+}
+
+/*推荐爆款商品*/
+.bg2{
+    background: url("../image/首页/首页_03_1.jpg")no-repeat center center;
+}
+.bg2 .titleOne{
+    left: 510px;
+    top: 15px;
+    font-size: 28px;
+}
+.sellingBox{
+    height: 530px;
+    margin-top: 30px;
+}
+.sellingBox div{
+    float: left;
+}
+.sellingHeight{
+    height: 480px;
+}
+.sellingWidth1{
+    width: 300px;
+}
+.sellingWidth2{
+    width: 570px;
+}
+.smallSebox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.smallPic2{
+    width: 190px;
+    height: 230px;
+}
+.smallPic2 p{
+    margin-top: -30px;
+    text-align: center;
+}
+ a:link{
+    color: #9f9f9f;
+    /*font-size: 14px;*/
+}
+ a:hover{
+    color: red;
+    /*font-size: 14px;*/
+}
+.smallPic2 span{
+    color: #ff0000;
+    font-size: 14px;
+}
+.sellingBottom{
+    margin-top: 20px;
+}
+/*热门商品*/
+.hotBox{
+    height: 720px;
+}
+.hotBox div {
+    float: left;
+}
+.hotText1{
+    height: 50px;
+    position: relative;
+
+}
+
+.hotNve1{
+    width: 315px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.hotNve1 li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin:0 10px 0;
+}
+.hotNve1 li:nth-child(1) a{
+     color: #ff0000;
+ }
+.hotText1 span{
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    width: 200px;
+}
+.hotLeft1{
+    height:660px;
+    width: 495px;
+    position: relative;
+    margin-right: 15px;
+}
+.hotRight1{
+    width: 690px;
+    height: 660px;
+}
+.hotRight1 div{
+    width: 330px;
+    height: 320px;
+    cursor: pointer;
+    position: relative;
+}
+.hotRight1 div:nth-child(1),.hotRight1 div:nth-child(2){
+    margin: 0 auto 20px auto;
+}
+.hotRight1 div:nth-child(1),.hotRight1 div:nth-child(3){
+    margin-right: 30px;
+}
+.hotRight1 div img{
+    width: 330px;
+    height: 320px;
+}
+.hotRight1 div p{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.hotRight1 div p a{
+    font-size: 18px;
+}
+.hotRight1 div p span{
+    font-size: 18px;
+    color: #ff0000;
+}
+.hotLeft2{
+    margin-left: 15px;
+}

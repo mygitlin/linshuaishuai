@@ -1,0 +1,229 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+#zhongJian{
+    width: 980px;
+    height: auto;
+    margin:5px auto 0px;
+}
+#zhongJianLeft{
+    width: 195px;
+    height: auto;
+    float: left;
+}
+#yongHuXinXi{
+    clear: both;
+    width: 195px;
+    height:115px;
+    background: #db3635;
+}
+#zuiJinChangPin{
+    margin-top: 5px;
+    width: 195px;
+    height:115px;
+}
+#hongSeTiao{
+    width: 195px;
+    height:30px;
+    background: url("../img/顶部红色条.gif");
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+}
+#zuiJInLiuLan{
+    width: 193px;
+    height: 85px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+}
+#zuiJInLiuLanRight:hover{
+    color: red;
+}
+#zuiJInLiuLanLeft{
+    width: 70px;
+    height: 85px;
+    background: url("../img/空气净化器.JPG") no-repeat center center;
+    float: left;
+}
+#zuiJInLiuLanRight{
+    width: 123px;
+    height: 85px;
+    float: left;
+    font-size: 12px;
+    color: #3b3b3b;
+}
+#zuiJInLiuLanRight p{
+    color: red;
+    font-size: 14px;
+}
+#zhongJianRight{
+    width: 780px;
+    height: auto;
+    float: right;
+}
+#xiangQingWeiZhi{
+    clear: both;
+    width: 780px;
+    height: 30px;
+    background: #efefef;
+    font-size: 10px;
+    line-height: 30px;
+    color:gray;
+}
+#xiangQingWeiZhi img{
+
+    margin-left: 10px;
+
+}
+#xiangQingWeiZhi span{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
+    color: black;
+}
+#xiangQingTuPian{
+    width: 300px;
+    height: 280px;
+    float: left;
+    border-right: 1px dashed gray;
+    padding-bottom: 15px;
+    background: url("../img/产品图.jpg") no-repeat center center;
+}
+#xiangQingJieShao{
+    width: 479px;
+    height: 280px;
+    float: left;
+    margin-bottom: 15px;
+}
+#xiangQingJieShao1{
+    width: 479px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #0000af;
+}
+#xiangQingJieShao1 span{
+    margin-left: 25px;
+    color: gray;
+}
+#xiangQingJieShao1 span a{
+    font-size: 8px;
+    color: gray;
+}
+#xiangQingJieShao2{
+    width: 469px;
+    height: 53px;
+    font-size: 10px;
+    margin-left: 10px;
+    border-top: 1px dashed #cccccc;
+    border-bottom: 1px dashed #cccccc;
+}
+#xiangQingJieShao2 p{
+    margin-top: 6px;
+    margin-left: 10px;
+}
+#xiangQingJieShao2 span{
+    color: red;
+}
+#xiangQingJieShao2 a{
+    color: gray;
+    margin-left: 6px;
+}
+#xiangQingJieShao3{
+    width: 469px;
+    height: 170px;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#xiangQingJieShao3 p{
+    margin-top: 10px;
+}
+#xiangQingJieShao3 input{
+    width: 50px;
+}
+#xiangQingJieShao3 span{
+    color: red;
+    margin-left: 8px;
+}
+#xiangQingJieShao3 img{
+    margin-top: 10px;
+}
+#xiaYiGeShangPin{
+    clear: both;
+    width: 780px;
+    height: 40px;
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    font-size: 10px;
+    line-height: 40px;
+}
+#xiaYiGeShangPin a{
+    text-decoration:none ;
+    color: gray;
+}
+#xiaYiGeShangPin span{
+    font-weight: bold;
+    font-size: 15px;
+}
+#xiaYiGeShangPin img{
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.xiangQingXiaFang{
+    width: 780px;
+    height: 724px;
+    margin-top: 10px;
+    background: #fefbff;
+    border-bottom: 1px solid #cccccc;
+}
+.xiangQingXiaFang ul{
+    list-style: none;
+}
+.xiangQingXiaFang li{
+    width: 60px;
+    height: 22px;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    float: left;
+    margin-right: 5px;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+.xiangXiShouMing,.xiangGuanShangPin,.shangPinPingLun,.fuHuanFangShi,.songHuoFangShi{
+    clear: both;
+    width: 780px;
+    height: 700px;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    display: none;
+    font-size: 14px;
+
+}
+.xiangXiShouMing{
+
+    display: block;
+}
+.xS{
+    display: block;
+}
+.liGaiBian{
+    background: white;
+    color: red;
+}
+.firstli{
+    background: white;
+    color: red;
+}
+

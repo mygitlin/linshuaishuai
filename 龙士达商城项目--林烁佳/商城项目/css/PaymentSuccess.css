@@ -1,0 +1,60 @@
+.paymentSuccess{
+    width: 1200px;
+    height: 300px;
+    border: 1px solid#e20606;
+    margin: 90px auto 90px auto;
+}
+.paymentSuccess_min{
+    width: 666px;
+    margin: 50px auto;
+}
+.paymentSuccess_min li:nth-child(1){
+    height: 40px;
+    line-height: 40px;
+    background: url("../image/付款成功页/success.png")no-repeat;
+}
+.paymentSuccess_min li:nth-child(1) span:nth-child(1){
+    margin-left: 40px;
+}
+.paymentSuccess_min li:nth-child(1) span:nth-child(2){
+    color: #ff0000;
+}
+.paymentSuccess_min li:nth-child(2){
+    margin-left: 40px;
+}
+.paymentSuccess_min li:nth-child(2)>span:nth-child(2){
+    margin-left: 10px;
+    color: #077bd2;
+}
+.paymentSuccess_min li:nth-child(3){
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.paymentSuccess_min li:nth-child(3)>span{
+    color: #077bd2;
+}
+.paymentSuccess_min li:nth-child(3) a:visited{
+    color: #077bd2;
+}
+.paymentSuccess_min li:nth-child(4){
+    margin: 10px 0 0 40px;
+}
+.paymentSuccess_min li:nth-child(5){
+    width: 676px;
+    height: 45px;
+    margin-top: 25px;
+    border-top: 1px dashed #cccccc;
+    border-bottom: 1px dashed #cccccc;
+}
+.paymentSuccess_min li:nth-child(5)>ol>p:nth-child(1)>i{
+    color: #ff0000;
+}
+.paymentSuccess_min li:nth-child(5)>ol>p:nth-child(2){
+    margin-left: 144px;
+}
+.paymentSuccess_min li:nth-child(5)>ol>p:nth-child(2)>span{
+    color: #077bd2;
+}
+.paymentSuccess_min li:nth-child(5)>ol>p{
+    margin-left: 40px;
+}

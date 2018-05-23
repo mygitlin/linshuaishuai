@@ -1,0 +1,225 @@
+/*头部*/
+header{
+    width: 100%;
+    height: 95px;
+    border-bottom: 5px solid #f1f1f1;
+}
+#herderBox{
+    width: 1200px;
+    height: 95px;
+    margin: 0 auto;
+    position: relative;
+}
+.smallA{
+    width: 355px;
+    height: 95px;
+    display: block;
+}
+#loginLogo{
+    width: 355px;
+    height: 95px;
+    background: url("../image/登录/login_logo.jpg")no-repeat center;
+}
+.headText1{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+.headText1 span{
+    color: #999999;
+}
+.headText1 a:link{
+    color: #666666;
+    font-weight: bold;
+}
+.headText1 a:hover{
+    color: #ff0000;
+    font-weight: bold;
+}
+/*中间盒子*/
+article{
+    width: 1200px;
+    height: 585px;
+    margin: 40px auto 0;
+    position: relative;
+}
+.regBox{
+    width: 650px;
+    height: 585px;
+    position: absolute;
+    left: 100px;
+    border-right: 3px solid #dfdfdf;
+}
+.regBox div{
+    width:410px;
+    height: 50px;
+    border: 1px solid #dfdfdf;
+    margin: 35px  auto 0;
+}
+.regBox div:nth-child(1){
+    margin-top: 0;
+}
+.regBox div span{
+    display:block;
+    /*display: inline-block;*/
+    width: 90px;
+    font-size: 16px;
+    padding: 15px;
+    text-align: justify;
+    float: left;
+    text-align-last:justify;
+    -moz-text-align-last:justify;
+    -webkit-text-align-last:justify;
+    -ms-text-align-last: justify;
+}
+/*.regBox div span:after{*/
+    /*content: "";*/
+    /*width: 100%;*/
+    /*!*text-align: justify;*!*/
+    /*display: inline-block;*/
+    /*overflow: hidden;*/
+    /*margin: 0;*/
+    /*!*display: block;*!*/
+/*}*/
+.regBox div input{
+    border: none;
+    width: 285px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-indent: 5px;
+    outline:none;
+    /*text-overflow : ellipsis;*/
+    /*white-space:nowrap;*/
+    /*overflow: hidden;*/
+    /*color: #55ffc1;*/
+}
+#phone,#vCation{
+    width: 160px;
+}
+#vCation{
+    top: -10px;
+}
+#but1{
+    width: 120px;
+    height: 50px;
+    border: none;
+
+}
+#regSubit{
+    width:410px;
+    height: 50px;
+    margin: 0;
+    background: #ff0000;
+    color: #ffffff;
+}
+#imgVercation,#btnBhone{
+    width: 120px;
+    border: none;
+    margin: -40px auto auto 290px;
+    background:#b4b3b5;
+    text-align: center;
+    line-height: 50px;
+}
+aside{
+    position: absolute;
+    width: 340px;
+    height: 585px;
+    right: 0;
+    top: 0;
+}
+/*<!--侧边栏-->*/
+aside div{
+    width: 180px;
+    height: 50px;
+    position: relative;
+}
+.picImg1 ,.picImg2{
+    width: 50px;
+    height: 50px;
+}
+.picImg1{
+    background: url("../image/注册/reg_enterprise.jpg")no-repeat center center;
+}
+.picImg2{
+    background: url("../image/注册/reg_Global.jpg")no-repeat center center;
+}
+aside div P{
+    width: 100px;
+}
+aside div P:hover{
+    color: #ff0000;
+}
+.picReg1{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.picReg2{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+/*底部*/
+footer{
+    width: 1200px;
+    height: 50px;
+    margin: 100px auto;
+}
+footer p{
+    text-align: center;
+}
+#navBox{
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+}
+.navBox1{
+    width: 380px;
+    float: left;
+}
+.navBox1 span:after{
+    content: "|";
+    font-size: 12px;
+}
+.navBox1 span:nth-child(5):after{
+    content:none;
+}
+.navBox1 a{
+    margin: auto 10px auto 10px;
+}
+.navBox2{
+    width: 130px;
+    float: left;
+}
+.navBox2 span:after{
+    content: "|";
+    font-size: 12px;
+}
+.navBox2 span:nth-child(2):after{
+    content:none;
+}
+.navBox2 a{
+    margin: auto 10px auto 10px;
+}
+.navBox3{
+    width: 260px;
+    float: left;
+}
+.navBox3 span:after{
+    content: "|";
+    font-size: 12px;
+}
+.navBox3 span:nth-child(3):after{
+    content:none;
+}
+.navBox3 a{
+    margin: auto 10px auto 10px;
+}
